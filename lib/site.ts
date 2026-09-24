@@ -68,6 +68,7 @@ const LIVE_ROUTES = new Set<string>([
   "/services/move-in-cleaning/",
   "/services/post-construction-cleaning/",
   "/services/spring-cleaning/",
+  "/services/window-cleaning/",
 ]);
 
 export function isLiveRoute(path: string): boolean {

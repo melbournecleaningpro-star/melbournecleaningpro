@@ -9,6 +9,7 @@ const extraServices = [
   { title: "Move-In Cleaning", href: "/services/move-in-cleaning/" },
   { title: "Post-Construction Cleaning", href: "/services/post-construction-cleaning/" },
   { title: "Spring Cleaning", href: "/services/spring-cleaning/" },
+  { title: "Window Cleaning", href: "/services/window-cleaning/" },
 ].filter((s) =>
   isLiveRoute(s.href),
 );

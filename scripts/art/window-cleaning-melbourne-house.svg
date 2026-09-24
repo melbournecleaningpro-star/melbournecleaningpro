@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8f2"/><stop offset="1" stop-color="#f3f9f6"/></linearGradient>
+    <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfe0ef"/><stop offset="1" stop-color="#e6f3f6"/></linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#sky)"/>
+  <rect y="400" width="640" height="80" fill="#9fcf98"/>
+  <path d="M0 400h640" stroke="#8cc486" stroke-width="4"/>
+  <!-- single-storey brick-and-weatherboard house -->
+  <path d="M90 200 320 90l230 110Z" fill="#10272f"/>
+  <rect x="110" y="200" width="420" height="200" fill="#f4efe6"/>
+  <g stroke="#e7dfd1" stroke-width="2"><path d="M110 225h420M110 250h420M110 275h420M110 300h420M110 325h420M110 350h420M110 375h420"/></g>
+  <!-- windows -->
+  <g>
+    <rect x="140" y="230" width="120" height="110" fill="#fff"/><rect x="148" y="238" width="104" height="94" fill="url(#gl)"/>
+    <path d="M200 238v94M148 285h104" stroke="#fff" stroke-width="5"/>
+    <path d="M156 326l40-80M176 330l30-60" stroke="#fff" stroke-width="5" opacity=".7" stroke-linecap="round"/>
+    <rect x="134" y="340" width="132" height="8" rx="2" fill="#fff"/>
+    <rect x="380" y="230" width="120" height="110" fill="#fff"/><rect x="388" y="238" width="104" height="94" fill="url(#gl)"/>
+    <path d="M440 238v94M388 285h104" stroke="#fff" stroke-width="5"/>
+    <path d="M396 326l40-80M416 330l30-60" stroke="#fff" stroke-width="5" opacity=".7" stroke-linecap="round"/>
+    <rect x="374" y="340" width="132" height="8" rx="2" fill="#fff"/>
+  </g>
+  <!-- glass front door -->
+  <rect x="290" y="250" width="60" height="150" fill="#0b6e69"/>
+  <rect x="300" y="262" width="40" height="80" fill="url(#gl)"/>
+  <circle cx="340" cy="360" r="4" fill="#f4b63f"/>
+  <!-- garden -->
+  <ellipse cx="90" cy="400" rx="60" ry="30" fill="#6aa864"/><ellipse cx="580" cy="400" rx="70" ry="34" fill="#6aa864"/>
+  <path d="M310 400h20v80h-20Z" fill="#e6dccb"/>
+  <!-- tree -->
+  <path d="M600 400V300" stroke="#7a5a3c" stroke-width="8"/>
+  <circle cx="600" cy="270" r="40" fill="#8cc486"/>
+  <circle cx="110" cy="80" r="30" fill="#fff" opacity=".9"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8d9e8"/><stop offset="1" stop-color="#e3f1f6"/></linearGradient>
+    <linearGradient id="glint" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <clipPath id="c"><rect x="40" y="90" width="560" height="290"/></clipPath>
+  </defs>
+  <rect width="640" height="480" fill="#eef1f0"/>
+  <!-- awning / signage band (no text) -->
+  <rect x="30" y="40" width="580" height="50" fill="#10272f"/>
+  <rect x="60" y="58" width="120" height="14" rx="3" fill="#f4b63f"/>
+  <!-- shopfront glazing -->
+  <rect x="30" y="90" width="580" height="300" fill="#2e5360"/>
+  <rect x="40" y="90" width="560" height="290" fill="url(#gl)"/>
+  <g clip-path="url(#c)">
+    <!-- interior visible through glass: desks + plant -->
+    <rect x="80" y="280" width="200" height="10" fill="#fff" opacity=".8"/><rect x="100" y="240" width="50" height="36" rx="3" fill="#10272f" opacity=".45"/>
+    <rect x="370" y="280" width="200" height="10" fill="#fff" opacity=".8"/><rect x="420" y="240" width="50" height="36" rx="3" fill="#10272f" opacity=".45"/>
+    <path d="M320 380c-6-40 0-70 14-90 10 30 6 60-14 90Z" fill="#3e8e6a" opacity=".7"/>
+    <path d="M40 380 240 90h80L120 380Z" fill="url(#glint)"/>
+    <path d="M360 380 520 90h36L396 380Z" fill="url(#glint)" opacity=".8"/>
+  </g>
+  <g fill="#2e5360"><rect x="226" y="90" width="8" height="290"/><rect x="406" y="90" width="8" height="290"/></g>
+  <!-- glass entry door -->
+  <rect x="266" y="190" width="108" height="190" fill="none" stroke="#2e5360" stroke-width="6"/>
+  <path d="M320 190v190" stroke="#2e5360" stroke-width="4"/>
+  <rect x="306" y="280" width="4" height="30" rx="2" fill="#f4b63f"/><rect x="330" y="280" width="4" height="30" rx="2" fill="#f4b63f"/>
+  <!-- footpath -->
+  <rect y="390" width="640" height="90" fill="#d7d9d4"/>
+  <g stroke="#c8cbc5" stroke-width="2"><path d="M0 430h640M160 390v90M320 390v90M480 390v90"/></g>
+  <!-- bucket + squeegee on footpath -->
+  <path d="M500 470h50l-5-40h-40Z" fill="#0b6e69"/><rect x="496" y="424" width="58" height="8" rx="4" fill="#08524e"/>
+  <path d="M560 470 590 410" stroke="#10272f" stroke-width="5" stroke-linecap="round"/><rect x="578" y="400" width="36" height="8" rx="3" fill="#f4b63f" transform="rotate(-20 596 404)"/>
+</svg>

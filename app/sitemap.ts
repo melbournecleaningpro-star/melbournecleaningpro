@@ -7,6 +7,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${siteConfig.url}/`, changeFrequency: "monthly", priority: 1 },
+    { url: `${siteConfig.url}/services/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/end-of-lease-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/commercial-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/deep-cleaning/`, changeFrequency: "monthly", priority: 0.9 },

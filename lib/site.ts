@@ -60,6 +60,7 @@ export const pageRobots = ALLOW_INDEXING
  */
 const LIVE_ROUTES = new Set<string>([
   "/",
+  "/services/",
   "/services/end-of-lease-cleaning/",
   "/services/commercial-cleaning/",
   "/services/deep-cleaning/",

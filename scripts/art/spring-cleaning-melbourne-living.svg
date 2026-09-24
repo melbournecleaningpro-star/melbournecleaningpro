@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8f2"/><stop offset="1" stop-color="#f4faf6"/></linearGradient>
+    <clipPath id="w"><rect x="250" y="50" width="300" height="230"/></clipPath>
+    <g id="blossom"><circle r="7" fill="#f7c8d4"/><circle r="3" fill="#f4b63f"/></g>
+  </defs>
+  <rect width="640" height="480" fill="#fdfbf5"/>
+  <rect y="370" width="640" height="110" fill="#e6d7bb"/>
+  <g stroke="#d7c6a4" stroke-width="2"><path d="M0 404h640M0 440h640M150 370v34M420 404v36M560 370v34"/></g>
+  <!-- open casement window with garden -->
+  <rect x="240" y="40" width="320" height="250" fill="#fff"/>
+  <rect x="250" y="50" width="300" height="230" fill="url(#sky)"/>
+  <g clip-path="url(#w)">
+    <ellipse cx="320" cy="290" rx="120" ry="70" fill="#a7d3a0"/><ellipse cx="500" cy="300" rx="130" ry="80" fill="#8cc486"/>
+    <path d="M270 200c30-40 60-50 90-40" stroke="#7a5a3c" stroke-width="5" fill="none"/>
+    <use href="#blossom" x="300" y="176"/><use href="#blossom" x="330" y="166"/><use href="#blossom" x="352" y="160"/><use href="#blossom" x="286" y="192"/>
+    <circle cx="500" cy="100" r="24" fill="#fff" opacity=".95"/>
+  </g>
+  <path d="M400 50v230" stroke="#fff" stroke-width="6"/>
+  <!-- opened sash angled in -->
+  <path d="M550 50l40 20v200l-40 10Z" fill="#fff" stroke="#e6ece8" stroke-width="3"/>
+  <!-- sheer curtain moving in breeze -->
+  <path d="M230 30h24c-10 70 20 150 0 270h-24c14-110-12-190 0-270Z" fill="#fff" opacity=".9"/>
+  <!-- sofa -->
+  <rect x="60" y="280" width="260" height="70" rx="24" fill="#bfe0d6"/>
+  <rect x="44" y="318" width="292" height="54" rx="18" fill="#a8d4c7"/>
+  <rect x="34" y="300" width="40" height="80" rx="16" fill="#8fc6b6"/><rect x="306" y="300" width="40" height="80" rx="16" fill="#8fc6b6"/>
+  <rect x="84" y="292" width="58" height="44" rx="12" fill="#f4b63f" transform="rotate(-6 113 314)"/>
+  <rect x="236" y="292" width="54" height="42" rx="12" fill="#f7c8d4" transform="rotate(6 263 313)"/>
+  <!-- coffee table with blossom vase -->
+  <ellipse cx="440" cy="400" rx="80" ry="12" fill="#fff" stroke="#e3dccf" stroke-width="3"/>
+  <rect x="434" y="406" width="12" height="34" fill="#c9a97e"/>
+  <rect x="428" y="360" width="24" height="36" rx="10" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+  <path d="M440 360c-6-30-20-50-40-60M442 360c4-30 18-52 38-62M440 360v-50" stroke="#7a5a3c" stroke-width="3" fill="none"/>
+  <use href="#blossom" x="400" y="300"/><use href="#blossom" x="480" y="298"/><use href="#blossom" x="440" y="308"/><use href="#blossom" x="418" y="318"/><use href="#blossom" x="462" y="316"/>
+  <!-- basket with cloths -->
+  <path d="M560 470h60l-6-46h-48Z" fill="#e0bf8d"/><rect x="562" y="414" width="56" height="12" rx="6" fill="#0b6e69"/>
+  <!-- rug -->
+  <ellipse cx="250" cy="440" rx="190" ry="24" fill="#f4b63f" opacity=".25"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="gl"><rect x="230" y="50" width="180" height="130"/></clipPath>
+    <pattern id="sb" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#fbfdf9"/><path d="M0 0h28M0 0v28" stroke="#e1ece0" stroke-width="1.5"/></pattern>
+    <g id="blossom"><circle r="6" fill="#f7c8d4"/><circle r="2.5" fill="#f4b63f"/></g>
+  </defs>
+  <rect width="640" height="480" fill="#fbfaf4"/>
+  <rect y="380" width="640" height="100" fill="#e9dfcc"/>
+  <!-- window over sink -->
+  <rect x="220" y="40" width="200" height="150" fill="#fff"/>
+  <rect x="230" y="50" width="180" height="130" fill="#d4ecf2"/>
+  <g clip-path="url(#gl)"><ellipse cx="300" cy="190" rx="100" ry="40" fill="#a7d3a0"/></g>
+  <path d="M320 50v130" stroke="#fff" stroke-width="5"/>
+  <!-- open shelves with herbs -->
+  <rect x="40" y="70" width="150" height="6" rx="3" fill="#c9a97e"/><rect x="40" y="130" width="150" height="6" rx="3" fill="#c9a97e"/>
+  <g><rect x="52" y="46" width="22" height="24" rx="4" fill="#fff" stroke="#d6e3e0" stroke-width="2"/><rect x="82" y="50" width="18" height="20" rx="4" fill="#f4b63f"/><circle cx="130" cy="58" r="12" fill="#fff" stroke="#d6e3e0" stroke-width="2"/><rect x="152" y="44" width="24" height="26" rx="4" fill="#bfe0d6"/></g>
+  <g><rect x="56" y="112" width="22" height="18" rx="4" fill="#fff" stroke="#d6e3e0" stroke-width="2"/><path d="M67 112c-6-12-4-22 0-26 4 4 6 14 0 26Z" fill="#6aa864"/><rect x="100" y="108" width="40" height="22" rx="4" fill="#f7c8d4"/></g>
+  <rect x="460" y="40" width="150" height="110" rx="4" fill="#bfe0d6"/><path d="M535 40v110" stroke="#a8d4c7" stroke-width="3"/>
+  <!-- splashback + bench -->
+  <rect x="30" y="200" width="580" height="60" fill="url(#sb)"/>
+  <rect x="24" y="258" width="592" height="14" rx="3" fill="#fbfaf6" stroke="#e3dccf" stroke-width="2"/>
+  <rect x="30" y="272" width="580" height="108" fill="#fff"/>
+  <g stroke="#e8ece6" stroke-width="3"><path d="M150 272v108M270 272v108M390 272v108M510 272v108"/></g>
+  <g fill="#c9a97e"><rect x="130" y="290" width="4" height="22" rx="2"/><rect x="286" y="290" width="4" height="22" rx="2"/><rect x="406" y="290" width="4" height="22" rx="2"/><rect x="526" y="290" width="4" height="22" rx="2"/></g>
+  <!-- tap, cooktop -->
+  <path d="M320 258v-34a12 12 0 0 1 24 0" fill="none" stroke="#aebdba" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#10272f" opacity=".75"><ellipse cx="470" cy="260" rx="18" ry="3"/><ellipse cx="520" cy="260" rx="18" ry="3"/></g>
+  <!-- blossom jar + lemons -->
+  <rect x="150" y="224" width="22" height="34" rx="8" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+  <path d="M161 224c-4-24-14-36-26-44M162 224c4-24 14-38 26-44" stroke="#7a5a3c" stroke-width="3" fill="none"/>
+  <use href="#blossom" x="136" y="180"/><use href="#blossom" x="188" y="180"/><use href="#blossom" x="150" y="194"/><use href="#blossom" x="176" y="196"/>
+  <g fill="#f4d45c"><ellipse cx="410" cy="252" rx="10" ry="8"/><ellipse cx="428" cy="254" rx="9" ry="7"/></g>
+  <!-- spray + cloth -->
+  <rect x="80" y="220" width="22" height="38" rx="6" fill="#fff" stroke="#cfe0dc" stroke-width="2"/><rect x="85" y="208" width="12" height="14" rx="3" fill="#0b6e69"/><path d="M82 198h24l4 10H82Z" fill="#0b6e69"/>
+  <path d="M232 258c4-10 24-12 34-4 2 4-2 4-4 4Z" fill="#f4b63f"/>
+</svg>

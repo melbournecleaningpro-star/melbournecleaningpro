@@ -14,5 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/services/airbnb-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/move-in-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/post-construction-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteConfig.url}/services/spring-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
   ];
 }

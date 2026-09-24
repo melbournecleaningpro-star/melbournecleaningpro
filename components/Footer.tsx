@@ -8,6 +8,7 @@ import { Container } from "./ui";
 const extraServices = [
   { title: "Move-In Cleaning", href: "/services/move-in-cleaning/" },
   { title: "Post-Construction Cleaning", href: "/services/post-construction-cleaning/" },
+  { title: "Spring Cleaning", href: "/services/spring-cleaning/" },
 ].filter((s) =>
   isLiveRoute(s.href),
 );

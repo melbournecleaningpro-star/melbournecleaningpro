@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="gl"><rect x="428" y="48" width="164" height="74"/></clipPath>
+    <pattern id="t" width="36" height="36" patternUnits="userSpaceOnUse"><rect width="36" height="36" fill="#f4faf7"/><path d="M0 0h36M0 0v36" stroke="#dcece6" stroke-width="1.5"/></pattern>
+    <g id="blossom"><circle r="6" fill="#f7c8d4"/><circle r="2.5" fill="#f4b63f"/></g>
+  </defs>
+  <rect width="640" height="480" fill="url(#t)"/>
+  <rect y="410" width="640" height="70" fill="#e5ddcf"/>
+  <!-- high window -->
+  <rect x="420" y="40" width="180" height="90" fill="#fff"/><rect x="428" y="48" width="164" height="74" fill="#d4ecf2"/>
+  <g clip-path="url(#gl)"><ellipse cx="480" cy="124" rx="70" ry="24" fill="#a7d3a0"/></g>
+  <!-- bath -->
+  <path d="M340 300h260v40c0 40-30 70-80 70H420c-50 0-80-30-80-70Z" fill="#fff" stroke="#e3e8e4" stroke-width="3"/>
+  <rect x="330" y="292" width="280" height="12" rx="6" fill="#fff" stroke="#e3e8e4" stroke-width="2"/>
+  <path d="M580 292v-60h-24" fill="none" stroke="#aebdba" stroke-width="5" stroke-linecap="round"/>
+  <!-- oval mirror + vanity -->
+  <ellipse cx="170" cy="130" rx="70" ry="86" fill="#fff"/><ellipse cx="170" cy="130" rx="60" ry="76" fill="#d6ebf1"/>
+  <path d="M140 170l40-70M160 184l30-50" stroke="#fff" stroke-width="7" opacity=".85" stroke-linecap="round"/>
+  <rect x="70" y="250" width="200" height="14" rx="5" fill="#fbfaf6" stroke="#e3dccf" stroke-width="2"/>
+  <ellipse cx="170" cy="254" rx="40" ry="6" fill="#e8eeeb"/>
+  <path d="M170 250v-24h14" fill="none" stroke="#aebdba" stroke-width="5" stroke-linecap="round"/>
+  <rect x="80" y="264" width="180" height="90" rx="6" fill="#bfe0d6"/><path d="M170 264v90" stroke="#a8d4c7" stroke-width="3"/>
+  <g fill="#c9a97e"><rect x="156" y="296" width="4" height="20" rx="2"/><rect x="180" y="296" width="4" height="20" rx="2"/></g>
+  <!-- blossom in bottle on vanity -->
+  <rect x="226" y="222" width="16" height="28" rx="6" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+  <path d="M234 222c-2-18-10-28-18-34M235 222c4-18 12-28 20-32" stroke="#7a5a3c" stroke-width="2.5" fill="none"/>
+  <use href="#blossom" x="216" y="188"/><use href="#blossom" x="255" y="190"/><use href="#blossom" x="236" y="198"/>
+  <!-- plant on floor + caddy -->
+  <path d="M40 470c-4-40 2-70 14-94 10 30 6 64-14 94Z" fill="#6aa864"/><path d="M26 466h36l-4 14H30Z" fill="#fff"/>
+  <rect x="270" y="430" width="70" height="30" rx="8" fill="#f4b63f"/><rect x="282" y="410" width="14" height="22" rx="4" fill="#fff" stroke="#cfe0dc" stroke-width="2"/>
+</svg>

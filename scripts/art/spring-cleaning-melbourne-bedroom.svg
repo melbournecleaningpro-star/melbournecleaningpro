@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4ecf2"/><stop offset="1" stop-color="#f4faf6"/></linearGradient>
+    <g id="blossom"><circle r="6" fill="#f7c8d4"/><circle r="2.5" fill="#f4b63f"/></g>
+  </defs>
+  <rect width="640" height="480" fill="#fdfaf5"/>
+  <rect y="370" width="640" height="110" fill="#e8dcc6"/>
+  <!-- tall window, open, blossom tree outside -->
+  <rect x="400" y="40" width="200" height="260" fill="#fff"/>
+  <rect x="410" y="50" width="180" height="240" fill="url(#sky)"/>
+  <path d="M430 290c10-60 40-100 90-120" stroke="#7a5a3c" stroke-width="6" fill="none"/>
+  <path d="M480 190c20-10 50-10 80 0" stroke="#7a5a3c" stroke-width="4" fill="none"/>
+  <g><use href="#blossom" x="500" y="170"/><use href="#blossom" x="520" y="180"/><use href="#blossom" x="540" y="186"/><use href="#blossom" x="560" y="190"/><use href="#blossom" x="470" y="200"/><use href="#blossom" x="455" y="224"/><use href="#blossom" x="512" y="160"/><use href="#blossom" x="548" y="172"/></g>
+  <path d="M500 50v240" stroke="#fff" stroke-width="5"/>
+  <!-- bed with light linen -->
+  <rect x="60" y="180" width="280" height="110" rx="14" fill="#f7e3c4"/>
+  <rect x="40" y="270" width="320" height="84" rx="12" fill="#fff"/>
+  <rect x="40" y="296" width="320" height="58" rx="10" fill="#eaf5e4"/>
+  <rect x="80" y="240" width="96" height="42" rx="12" fill="#fff" stroke="#e8e2d6" stroke-width="2"/>
+  <rect x="224" y="240" width="96" height="42" rx="12" fill="#fff" stroke="#e8e2d6" stroke-width="2"/>
+  <rect x="48" y="354" width="10" height="20" rx="3" fill="#c9a97e"/><rect x="342" y="354" width="10" height="20" rx="3" fill="#c9a97e"/>
+  <!-- side table + lamp + book -->
+  <rect x="362" y="290" width="40" height="64" rx="6" fill="#c9a97e"/>
+  <rect x="368" y="278" width="28" height="12" rx="2" fill="#bfe0d6"/>
+  <!-- basket + plant -->
+  <path d="M560 470h60l-6-50h-48Z" fill="#e0bf8d"/>
+  <path d="M590 420c-8-30-4-54 8-70 8 24 6 50-8 70Z" fill="#6aa864"/>
+  <ellipse cx="200" cy="430" rx="150" ry="22" fill="#bfe0d6" opacity=".6"/>
+</svg>

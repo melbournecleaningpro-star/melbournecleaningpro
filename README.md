@@ -1,6 +1,6 @@
 # Melbourne Cleaning Pro: Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`) and Post-Construction Cleaning (`/services/post-construction-cleaning/`).
+Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`) and Spring Cleaning (`/services/spring-cleaning/`).
 
 ## Scripts
 
@@ -40,7 +40,7 @@ in `lib/site.ts` and to `app/sitemap.ts`, and every link to it updates automatic
 
 Page images live in `public/images` (e.g. `end-of-lease-cleaning-melbourne.webp`).
 Replace them with genuine job photos of the same filename. If the aspect ratio
-changes, update `width`/`height` in `lib/end-of-lease.ts` (`showcase`), `lib/commercial.ts`, `lib/deep-cleaning.ts`, `lib/office.ts`, `lib/airbnb.ts`, `lib/move-in.ts` or `lib/post-construction.ts` (`images`).
+changes, update `width`/`height` in `lib/end-of-lease.ts` (`showcase`), `lib/commercial.ts`, `lib/deep-cleaning.ts`, `lib/office.ts`, `lib/airbnb.ts`, `lib/move-in.ts`, `lib/post-construction.ts` or `lib/spring-cleaning.ts` (`images`).
 
 ## Search indexing (currently OFF, pre-launch)
 

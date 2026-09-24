@@ -1,5 +1,11 @@
-# Cloudflare Pages / Workers static assets config.
-# Build command: npm run build   |   Output directory: out
-name = "melbourne-cleaning-pro"
+# Cloudflare Workers (static assets) config.
+# Build command:  npm run build        -> static export to ./out
+# Deploy command: npx wrangler deploy  -> uploads ./out as static assets
+# `name` must match the Worker name in the Cloudflare dashboard.
+name = "melbournecleaningpro"
 compatibility_date = "2026-09-01"
-pages_build_output_dir = "out"
+
+[assets]
+directory = "./out"
+not_found_handling = "404-page"
+html_handling = "auto-trailing-slash"

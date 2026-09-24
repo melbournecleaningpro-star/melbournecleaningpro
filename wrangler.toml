@@ -1,0 +1,5 @@
+# Cloudflare Pages / Workers static assets config.
+# Build command: npm run build   |   Output directory: out
+name = "melbourne-cleaning-pro"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "out"

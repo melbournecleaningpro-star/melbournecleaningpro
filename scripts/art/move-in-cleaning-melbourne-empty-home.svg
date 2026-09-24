@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6ee"/><stop offset="1" stop-color="#f3f8f5"/></linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <clipPath id="w"><rect x="300" y="50" width="280" height="250"/></clipPath>
+    <path id="s" d="M0-10Q1.3-1.3 10 0Q1.3 1.3 0 10Q-1.3 1.3-10 0Q-1.3-1.3 0-10Z"/>
+  </defs>
+  <rect width="640" height="480" fill="#fbfaf7"/>
+  <!-- ceiling line + cornice -->
+  <rect y="0" width="640" height="18" fill="#f1eee7"/>
+  <!-- big steel-frame window -->
+  <rect x="290" y="40" width="300" height="270" fill="#10272f"/>
+  <rect x="300" y="50" width="280" height="250" fill="url(#sky)"/>
+  <g clip-path="url(#w)">
+    <ellipse cx="360" cy="300" rx="110" ry="50" fill="#a9d0ba"/><ellipse cx="530" cy="310" rx="120" ry="60" fill="#8fc1a4"/>
+    <circle cx="520" cy="100" r="20" fill="#fff" opacity=".9"/>
+  </g>
+  <g fill="#10272f"><rect x="386" y="50" width="6" height="250"/><rect x="478" y="50" width="6" height="250"/><rect x="300" y="170" width="280" height="6"/></g>
+  <!-- floor -->
+  <rect y="330" width="640" height="150" fill="#e7d9bf"/>
+  <g stroke="#d8c8a8" stroke-width="2"><path d="M0 364h640M0 402h640M0 440h640M120 330v34M360 364v38M560 330v34M60 402v38M260 402v38M480 402v38"/></g>
+  <rect y="324" width="640" height="8" fill="#fff"/>
+  <!-- light spill on floor from window -->
+  <path d="M300 332h280l60 148H200Z" fill="url(#light)" opacity=".7"/>
+  <!-- door frame left, open door -->
+  <rect x="40" y="90" width="150" height="240" fill="#fff"/>
+  <rect x="52" y="100" width="126" height="230" fill="#eef3f1"/>
+  <path d="M52 100l60 20v220l-60-10Z" fill="#dfe7e4"/>
+  <circle cx="102" cy="226" r="5" fill="#c9a97e"/>
+  <!-- moving boxes waiting just outside the door frame -->
+  <g>
+    <rect x="130" y="270" width="70" height="60" rx="3" fill="#d6b27f"/><rect x="130" y="270" width="70" height="10" fill="#c9a26c"/><rect x="158" y="270" width="14" height="60" fill="#e8cfa6"/>
+    <rect x="140" y="226" width="54" height="44" rx="3" fill="#e0bf8d"/><rect x="161" y="226" width="12" height="44" fill="#ecd6b1"/>
+  </g>
+  <!-- pendant (no furniture yet) -->
+  <path d="M200 18v80" stroke="#10272f" stroke-width="2"/>
+  <circle cx="200" cy="108" r="14" fill="#f4b63f"/>
+  <!-- power point + skirting shine -->
+  <rect x="240" y="296" width="20" height="14" rx="3" fill="#fff" stroke="#e1e6e3" stroke-width="2"/>
+  <g fill="#fff"><use href="#s" transform="translate(260 210) scale(1.3)"/><use href="#s" transform="translate(470 420) scale(1)"/><use href="#s" transform="translate(610 360) scale(.8)"/></g>
+  <g fill="#f4b63f"><use href="#s" transform="translate(236 160) scale(.8)"/><use href="#s" transform="translate(360 440) scale(.8)"/></g>
+</svg>

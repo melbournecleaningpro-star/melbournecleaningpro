@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <pattern id="sb" width="16" height="48" patternUnits="userSpaceOnUse"><rect width="16" height="48" fill="#fbfbf8"/><path d="M0 0v48" stroke="#e5ebe8" stroke-width="1.5"/></pattern>
+    <path id="s" d="M0-10Q1.3-1.3 10 0Q1.3 1.3 0 10Q-1.3 1.3-10 0Q-1.3-1.3 0-10Z"/>
+  </defs>
+  <rect width="640" height="480" fill="#f6f4ef"/>
+  <rect y="380" width="640" height="100" fill="#dcdcd4"/>
+  <path d="M0 380h640" stroke="#cfd0c7" stroke-width="3"/>
+  <!-- handleless upper cabinets -->
+  <rect x="40" y="40" width="380" height="110" rx="3" fill="#e9ece8"/>
+  <g stroke="#dadfdb" stroke-width="3"><path d="M135 40v110M230 40v110M325 40v110"/></g>
+  <!-- rangehood slim -->
+  <rect x="190" y="150" width="100" height="14" rx="2" fill="#c3cbc8"/>
+  <!-- splashback (vertical tiles) -->
+  <rect x="40" y="164" width="380" height="84" fill="url(#sb)"/>
+  <!-- bench + base -->
+  <rect x="34" y="246" width="392" height="14" rx="2" fill="#fbfaf6" stroke="#e3dccf" stroke-width="2"/>
+  <rect x="40" y="260" width="380" height="120" fill="#e9ece8"/>
+  <g stroke="#dadfdb" stroke-width="3"><path d="M135 260v120M230 260v120M325 260v120"/></g>
+  <rect x="190" y="276" width="100" height="84" rx="4" fill="#10272f" opacity=".85"/>
+  <!-- cooktop + sink -->
+  <g fill="#10272f" opacity=".85"><ellipse cx="220" cy="248" rx="16" ry="3"/><ellipse cx="260" cy="248" rx="16" ry="3"/></g>
+  <path d="M358 246v-30a12 12 0 0 1 24 0" fill="none" stroke="#aebdba" stroke-width="5" stroke-linecap="round"/>
+  <rect x="330" y="244" width="70" height="4" rx="2" fill="#c3d0cd"/>
+  <!-- empty fridge cavity -->
+  <rect x="440" y="40" width="110" height="340" rx="3" fill="#e2e6e3"/>
+  <rect x="452" y="52" width="86" height="328" fill="#d6dcd9"/>
+  <!-- window -->
+  <rect x="570" y="80" width="50" height="160" rx="3" fill="#fff"/><rect x="576" y="86" width="38" height="148" fill="#d6ebf1"/>
+  <!-- single spray bottle + cloth on bench -->
+  <rect x="96" y="208" width="24" height="38" rx="6" fill="#fff" stroke="#cfe0dc" stroke-width="2"/>
+  <rect x="101" y="196" width="14" height="14" rx="3" fill="#0b6e69"/>
+  <path d="M98 186h26l4 10h-30Z" fill="#0b6e69"/>
+  <path d="M130 246c4-10 26-12 36-4 2 4-2 4-4 4Z" fill="#f4b63f"/>
+  <!-- floor shine -->
+  <path d="M120 470l120-80M300 470l100-70" stroke="#fff" stroke-width="10" opacity=".5" stroke-linecap="round"/>
+  <g fill="#fff"><use href="#s" transform="translate(300 120) scale(1.2)"/><use href="#s" transform="translate(500 420) scale(1)"/></g>
+  <g fill="#f4b63f"><use href="#s" transform="translate(160 310) scale(.8)"/><use href="#s" transform="translate(600 300) scale(.8)"/></g>
+</svg>

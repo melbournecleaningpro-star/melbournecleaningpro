@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-ink: #10272f;
+  --color-ink-soft: #4a5d65;
+  --color-brand: #0b6e69;
+  --color-brand-dark: #08524e;
+  --color-brand-50: #eef7f5;
+  --color-brand-100: #d9eeea;
+  --color-wattle: #f4b63f;
+  --color-wattle-dark: #e0a126;
+  --color-cream: #f8f6f1;
+  --color-line: #e3e8e7;
+
+  --shadow-card: 0 1px 2px rgb(16 39 47 / 0.04), 0 8px 24px -12px rgb(16 39 47 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(16 39 47 / 0.05), 0 18px 40px -16px rgb(16 39 47 / 0.22);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-brand-100 text-ink;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Native <details> accordion: hide default marker in all browsers */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary {
+  list-style: none;
+}
+
+/* Printable checklist (commercial cleaning page): print only the sheet */
+@media print {
+  body:has(#print-checklist) * {
+    visibility: hidden;
+  }
+  body:has(#print-checklist) #print-checklist,
+  body:has(#print-checklist) #print-checklist * {
+    visibility: visible;
+  }
+  body:has(#print-checklist) #print-checklist {
+    position: absolute;
+    inset: 0 0 auto 0;
+    box-shadow: none;
+  }
+}

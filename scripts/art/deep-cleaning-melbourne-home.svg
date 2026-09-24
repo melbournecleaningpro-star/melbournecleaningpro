@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6ee"/><stop offset="1" stop-color="#f1f7f4"/></linearGradient>
+    <clipPath id="w"><rect x="330" y="50" width="270" height="250" rx="4"/></clipPath>
+    <path id="s" d="M0-10Q1.3-1.3 10 0Q1.3 1.3 0 10Q-1.3 1.3-10 0Q-1.3-1.3 0-10Z"/>
+  </defs>
+  <rect width="640" height="480" fill="#fbf8f2"/>
+  <rect y="360" width="640" height="120" fill="#e2d3b8"/>
+  <g stroke="#d3c19f" stroke-width="2"><path d="M0 392h640M0 428h640M0 464h640M160 360v32M380 392v36M560 360v32M80 428v36M300 428v36"/></g>
+  <!-- large arched window with garden -->
+  <rect x="320" y="40" width="290" height="270" rx="6" fill="#fff"/>
+  <rect x="330" y="50" width="270" height="250" rx="4" fill="url(#sky)"/>
+  <g clip-path="url(#w)">
+    <ellipse cx="380" cy="300" rx="90" ry="60" fill="#9fcbb2"/>
+    <ellipse cx="540" cy="310" rx="110" ry="70" fill="#86bb9e"/>
+    <circle cx="560" cy="100" r="22" fill="#fff" opacity=".9"/>
+  </g>
+  <path d="M465 50v250M330 175h270" stroke="#fff" stroke-width="6"/>
+  <!-- sheer curtain -->
+  <path d="M300 30h30v290h-24c10-60-14-140-6-290Z" fill="#fff" opacity=".85"/>
+  <!-- bookshelf -->
+  <rect x="40" y="70" width="170" height="290" rx="4" fill="#fff"/>
+  <g fill="#ece4d6"><rect x="40" y="140" width="170" height="6"/><rect x="40" y="210" width="170" height="6"/><rect x="40" y="280" width="170" height="6"/></g>
+  <g>
+    <rect x="54" y="96" width="12" height="44" fill="#0b6e69"/><rect x="68" y="102" width="10" height="38" fill="#f4b63f"/><rect x="80" y="92" width="14" height="48" fill="#10272f"/><rect x="96" y="104" width="10" height="36" fill="#d9eeea"/>
+    <circle cx="160" cy="124" r="16" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+    <rect x="56" y="178" width="40" height="32" rx="4" fill="#f4b63f"/><path d="M150 210c-10-16-6-30 2-36 8 6 10 20-2 36Z" fill="#3e8e6a"/><rect x="140" y="196" width="22" height="14" rx="4" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+    <rect x="58" y="244" width="10" height="36" fill="#0e7f79"/><rect x="70" y="250" width="12" height="30" fill="#10272f"/><rect x="84" y="240" width="10" height="40" fill="#f4b63f"/><rect x="120" y="254" width="60" height="26" rx="4" fill="#d9eeea"/>
+  </g>
+  <!-- sofa -->
+  <rect x="230" y="270" width="330" height="70" rx="22" fill="#f4b63f"/>
+  <rect x="216" y="316" width="358" height="52" rx="18" fill="#f6c45a"/>
+  <rect x="206" y="296" width="42" height="84" rx="16" fill="#e0a126"/><rect x="542" y="296" width="42" height="84" rx="16" fill="#e0a126"/>
+  <rect x="250" y="284" width="64" height="48" rx="12" fill="#0b6e69" transform="rotate(-6 282 308)"/>
+  <rect x="470" y="284" width="60" height="46" rx="12" fill="#fff" transform="rotate(5 500 307)"/>
+  <!-- rug + coffee table -->
+  <ellipse cx="380" cy="430" rx="200" ry="30" fill="#0b6e69" opacity=".18"/>
+  <ellipse cx="380" cy="404" rx="90" ry="14" fill="#fff" stroke="#e3dccf" stroke-width="3"/>
+  <rect x="372" y="410" width="16" height="30" fill="#c9a97e"/>
+  <rect x="352" y="382" width="26" height="22" rx="6" fill="#0e7f79"/>
+  <rect x="392" y="390" width="36" height="10" rx="3" fill="#f4b63f"/>
+  <!-- floor lamp -->
+  <path d="M600 470V200" stroke="#10272f" stroke-width="4"/>
+  <path d="M580 200h40l-8-40h-24Z" fill="#fff" stroke="#e3dccf" stroke-width="2"/>
+  <ellipse cx="600" cy="472" rx="22" ry="5" fill="#10272f"/>
+  <!-- tall plant -->
+  <path d="M240 470c-6-40 0-80 16-110 10 36 6 76-16 110Z" fill="#2f7a58"/>
+  <path d="M246 470c10-34 30-56 58-62-8 30-30 52-58 62Z" fill="#5faf88"/>
+  <path d="M238 470c-24-18-36-44-34-70 22 16 32 40 34 70Z" fill="#3e8e6a"/>
+  <path d="M222 466h40l-6 14h-28Z" fill="#fff"/>
+  <g fill="#fff"><use href="#s" transform="translate(292 200) scale(1.3)"/><use href="#s" transform="translate(120 330) scale(.9)"/></g>
+  <g fill="#f4b63f"><use href="#s" transform="translate(470 440) scale(.9)"/><use href="#s" transform="translate(256 160) scale(.7)"/><use href="#s" transform="translate(30 40) scale(.8)"/></g>
+</svg>

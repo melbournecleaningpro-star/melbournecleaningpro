@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" role="img" aria-labelledby="t">
+  <title id="t">A freshly cleaned Melbourne apartment living room with a cleaning caddy in the foreground</title>
+  <defs>
+    <clipPath id="glass"><rect x="74" y="84" width="202" height="222" rx="3"/></clipPath>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceef3"/>
+      <stop offset="1" stop-color="#f3f8f5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0" r="1">
+      <stop offset="0" stop-color="#f4b63f" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#f4b63f" stop-opacity="0"/>
+    </radialGradient>
+    <path id="spark" d="M0-10Q1.3-1.3 10 0Q1.3 1.3 0 10Q-1.3 1.3-10 0Q-1.3-1.3 0-10Z"/>
+  </defs>
+
+  <!-- wall + floor -->
+  <rect width="640" height="560" fill="#eaf4f1"/>
+  <rect y="430" width="640" height="130" fill="#ebe2d3"/>
+  <g stroke="#dccfb9" stroke-width="2">
+    <path d="M0 462h640M0 498h640M0 534h640"/>
+    <path d="M120 430v32M330 462v36M520 430v32M210 498v36M450 498v36M60 534v26M600 534v26"/>
+  </g>
+  <rect y="424" width="640" height="8" fill="#fff"/>
+
+  <!-- window with skyline -->
+  <rect x="60" y="70" width="230" height="250" rx="8" fill="#fff"/>
+  <rect x="74" y="84" width="202" height="222" rx="3" fill="url(#sky)"/>
+  <g clip-path="url(#glass)">
+    <circle cx="232" cy="130" r="22" fill="#fff" opacity=".9"/>
+    <g fill="#b9d7df">
+      <rect x="74" y="232" width="30" height="80"/>
+      <rect x="108" y="206" width="24" height="106"/>
+      <rect x="170" y="220" width="28" height="92"/>
+      <rect x="236" y="240" width="40" height="72"/>
+    </g>
+    <g fill="#9cc4cf">
+      <path d="M136 312V150l14-18 14 18v162Z"/>
+      <rect x="200" y="186" width="30" height="126"/>
+      <rect x="88" y="258" width="26" height="54"/>
+    </g>
+    <g fill="#eaf4f1" opacity=".8">
+      <rect x="141" y="170" width="4" height="4"/><rect x="155" y="170" width="4" height="4"/>
+      <rect x="141" y="190" width="4" height="4"/><rect x="155" y="200" width="4" height="4"/>
+      <rect x="206" y="200" width="4" height="4"/><rect x="220" y="214" width="4" height="4"/>
+      <rect x="206" y="236" width="4" height="4"/>
+    </g>
+  </g>
+  <rect x="172" y="84" width="6" height="222" fill="#fff"/>
+  <rect x="74" y="192" width="202" height="6" fill="#fff"/>
+  <rect x="48" y="316" width="254" height="12" rx="4" fill="#fff"/>
+  <rect x="48" y="326" width="254" height="4" rx="2" fill="#d9e6e3"/>
+
+  <!-- pendant lamp -->
+  <path d="M478 0v88" stroke="#10272f" stroke-width="2"/>
+  <ellipse cx="478" cy="210" rx="120" ry="110" fill="url(#glow)"/>
+  <path d="M456 88h44l16 36h-76Z" fill="#f4b63f"/>
+  <rect x="440" y="122" width="76" height="4" rx="2" fill="#e0a126"/>
+
+  <!-- wall art -->
+  <rect x="398" y="164" width="128" height="88" rx="4" fill="#fff"/>
+  <rect x="408" y="174" width="108" height="68" fill="#d9eeea"/>
+  <path d="M408 242l30-34 20 20 26-30 32 44Z" fill="#0b6e69" opacity=".35"/>
+  <circle cx="494" cy="192" r="8" fill="#f4b63f" opacity=".8"/>
+
+  <!-- rug -->
+  <ellipse cx="440" cy="486" rx="196" ry="36" fill="#d9eeea"/>
+
+  <!-- sofa -->
+  <rect x="346" y="286" width="244" height="86" rx="20" fill="#0b6e69"/>
+  <rect x="330" y="350" width="276" height="56" rx="16" fill="#0e7f79"/>
+  <rect x="318" y="322" width="40" height="92" rx="16" fill="#08524e"/>
+  <rect x="578" y="322" width="40" height="92" rx="16" fill="#08524e"/>
+  <rect x="340" y="410" width="10" height="20" rx="3" fill="#10272f"/>
+  <rect x="586" y="410" width="10" height="20" rx="3" fill="#10272f"/>
+  <rect x="372" y="300" width="68" height="58" rx="14" fill="#f4b63f" transform="rotate(-7 406 329)"/>
+  <rect x="498" y="302" width="64" height="56" rx="14" fill="#f8f6f1" transform="rotate(6 530 330)"/>
+  <rect x="444" y="312" width="58" height="48" rx="12" fill="#d9eeea"/>
+
+  <!-- coffee table + vase -->
+  <rect x="372" y="438" width="10" height="44" rx="3" fill="#b8956a"/>
+  <rect x="494" y="438" width="10" height="44" rx="3" fill="#b8956a"/>
+  <rect x="356" y="428" width="164" height="14" rx="7" fill="#c9a97e"/>
+  <path d="M430 398c-3-18-10-30-20-38M436 398c2-20 8-34 18-42M433 398v-40" stroke="#3e8e6a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="410" cy="358" r="7" fill="#f4b63f"/>
+  <circle cx="454" cy="354" r="7" fill="#f8f6f1" stroke="#e0a126" stroke-width="2"/>
+  <circle cx="433" cy="355" r="7" fill="#f4b63f"/>
+  <rect x="418" y="396" width="30" height="34" rx="12" fill="#fff"/>
+  <rect x="470" y="418" width="34" height="10" rx="3" fill="#0e7f79"/>
+  <rect x="474" y="410" width="28" height="8" rx="3" fill="#f8f6f1"/>
+
+  <!-- plant -->
+  <g>
+    <path d="M262 470c-26-30-40-66-30-104 18 30 28 64 30 104Z" fill="#3e8e6a"/>
+    <path d="M268 470c4-44 20-82 50-104-4 40-22 76-50 104Z" fill="#5faf88"/>
+    <path d="M262 470c-34-10-58-34-66-64 30 12 52 34 66 64Z" fill="#5faf88"/>
+    <path d="M270 470c10-30 30-50 58-58-8 28-30 48-58 58Z" fill="#3e8e6a"/>
+    <path d="M264 470c-8-50-2-94 14-126 12 40 8 86-14 126Z" fill="#2f7a58"/>
+    <path d="M234 466h64l-9 60h-46Z" fill="#fff"/>
+    <rect x="230" y="462" width="72" height="10" rx="4" fill="#f8f6f1"/>
+  </g>
+
+  <!-- cleaning caddy (foreground) -->
+  <ellipse cx="140" cy="540" rx="96" ry="10" fill="#10272f" opacity=".08"/>
+  <path d="M84 480v-38a14 14 0 0 1 14-14h84a14 14 0 0 1 14 14v38" fill="none" stroke="#e0a126" stroke-width="9" stroke-linecap="round"/>
+  <rect x="98" y="420" width="38" height="70" rx="10" fill="#fff" stroke="#cfe0dc" stroke-width="2"/>
+  <rect x="104" y="444" width="26" height="22" rx="4" fill="#d9eeea"/>
+  <rect x="107" y="402" width="20" height="20" rx="3" fill="#0b6e69"/>
+  <path d="M100 386h40l6 16h-46Z" fill="#0b6e69"/>
+  <rect x="138" y="388" width="18" height="7" rx="3" fill="#08524e"/>
+  <path d="M104 402c-6 6-8 14-6 22" stroke="#0b6e69" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="150" y="436" width="36" height="54" rx="12" fill="#f4b63f" opacity=".95"/>
+  <rect x="156" y="424" width="24" height="16" rx="4" fill="#fff"/>
+  <path d="M176 470c10-16 30-22 40-12-6 10-24 16-40 12Z" fill="#0e7f79"/>
+  <rect x="62" y="470" width="156" height="64" rx="12" fill="#f4b63f"/>
+  <rect x="62" y="470" width="156" height="14" rx="7" fill="#e0a126"/>
+
+  <!-- sparkles -->
+  <g fill="#fff">
+    <use href="#spark" transform="translate(318 214) scale(1.4)"/>
+    <use href="#spark" transform="translate(560 228) scale(.9)"/>
+    <use href="#spark" transform="translate(236 380) scale(.8)"/>
+  </g>
+  <g fill="#f4b63f">
+    <use href="#spark" transform="translate(344 250) scale(.7)"/>
+    <use href="#spark" transform="translate(206 368) scale(1.1)"/>
+    <use href="#spark" transform="translate(600 170) scale(.6)"/>
+  </g>
+</svg>

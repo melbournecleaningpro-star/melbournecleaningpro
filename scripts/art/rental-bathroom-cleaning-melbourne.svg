@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <pattern id="tile" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#f4faf8"/><path d="M0 0h40M0 0v40" stroke="#d9e8e4" stroke-width="2"/>
+    </pattern>
+    <pattern id="floor" width="36" height="36" patternUnits="userSpaceOnUse">
+      <rect width="36" height="36" fill="#dfe9e6"/><path d="M0 0h36M0 0v36" stroke="#cddbd7" stroke-width="2"/>
+    </pattern>
+    <path id="s" d="M0-10Q1.3-1.3 10 0Q1.3 1.3 0 10Q-1.3 1.3-10 0Q-1.3-1.3 0-10Z"/>
+  </defs>
+  <rect width="640" height="480" fill="url(#tile)"/>
+  <rect y="410" width="640" height="70" fill="url(#floor)"/>
+
+  <!-- shower screen -->
+  <rect x="420" y="40" width="190" height="370" fill="#d9eeea" opacity=".35"/>
+  <rect x="420" y="40" width="190" height="370" fill="none" stroke="#b8c2c5" stroke-width="5"/>
+  <path d="M446 90l60 110M470 80l40 72M540 250l40 72" stroke="#fff" stroke-width="6" opacity=".8" stroke-linecap="round"/>
+  <!-- shower head + mixer -->
+  <path d="M580 60v30h-34" fill="none" stroke="#aebdba" stroke-width="6" stroke-linecap="round"/>
+  <rect x="524" y="84" width="30" height="12" rx="6" fill="#aebdba"/>
+  <circle cx="580" cy="220" r="12" fill="#c3d0cd"/><rect x="578" y="206" width="4" height="14" rx="2" fill="#8d9ea2"/>
+
+  <!-- mirror -->
+  <rect x="96" y="56" width="176" height="130" rx="18" fill="#fff"/>
+  <rect x="106" y="66" width="156" height="110" rx="12" fill="#dceef3"/>
+  <path d="M130 150l50-66M160 158l40-52" stroke="#fff" stroke-width="7" opacity=".85" stroke-linecap="round"/>
+
+  <!-- vanity -->
+  <rect x="80" y="232" width="208" height="16" rx="6" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+  <ellipse cx="184" cy="236" rx="46" ry="6" fill="#e3ecea"/>
+  <path d="M184 232v-26h18" fill="none" stroke="#aebdba" stroke-width="6" stroke-linecap="round"/>
+  <rect x="92" y="248" width="184" height="118" rx="6" fill="#0b6e69"/>
+  <path d="M184 248v118" stroke="#08524e" stroke-width="3"/>
+  <rect x="170" y="296" width="4" height="24" rx="2" fill="#f4b63f"/><rect x="194" y="296" width="4" height="24" rx="2" fill="#f4b63f"/>
+
+  <!-- toilet -->
+  <rect x="316" y="250" width="70" height="80" rx="8" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+  <rect x="340" y="262" width="22" height="6" rx="3" fill="#c3d0cd"/>
+  <path d="M306 330h90c0 36-20 56-45 56s-45-20-45-56Z" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+  <path d="M332 386h38v24h-38Z" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+
+  <!-- towel rail (empty, vacated) -->
+  <rect x="300" y="160" width="100" height="6" rx="3" fill="#aebdba"/>
+  <rect x="300" y="152" width="6" height="20" rx="3" fill="#aebdba"/><rect x="394" y="152" width="6" height="20" rx="3" fill="#aebdba"/>
+
+  <!-- caddy on floor -->
+  <rect x="140" y="420" width="120" height="44" rx="8" fill="#f4b63f"/>
+  <path d="M158 420v-18a10 10 0 0 1 10-10h64a10 10 0 0 1 10 10v18" fill="none" stroke="#e0a126" stroke-width="7"/>
+  <rect x="160" y="392" width="24" height="30" rx="6" fill="#fff" stroke="#cfe0dc" stroke-width="2"/>
+  <rect x="164" y="382" width="16" height="12" rx="3" fill="#0b6e69"/>
+  <path d="M206 420v-30l14-4 14 4v30Z" fill="#d9eeea"/>
+
+  <!-- sparkles -->
+  <g fill="#fff"><use href="#s" transform="translate(252 90) scale(1.1)"/><use href="#s" transform="translate(500 190) scale(1.3)"/></g>
+  <g fill="#f4b63f"><use href="#s" transform="translate(300 220) scale(.8)"/><use href="#s" transform="translate(620 30) scale(.7)"/><use href="#s" transform="translate(56 300) scale(.9)"/></g>
+</svg>

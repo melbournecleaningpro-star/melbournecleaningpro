@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <pattern id="sb" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="#f7fbfa"/><path d="M0 0h20M0 0v20" stroke="#dbe8e5" stroke-width="1.5"/></pattern>
+    <path id="s" d="M0-10Q1.3-1.3 10 0Q1.3 1.3 0 10Q-1.3 1.3-10 0Q-1.3-1.3 0-10Z"/>
+  </defs>
+  <rect width="640" height="480" fill="#eef3f2"/>
+  <rect y="370" width="640" height="110" fill="#c9d4d1"/>
+  <!-- overhead cabinets -->
+  <rect x="40" y="40" width="380" height="80" rx="4" fill="#fff"/>
+  <g stroke="#e3ecea" stroke-width="3"><path d="M135 40v80M230 40v80M325 40v80"/></g>
+  <g fill="#10272f"><rect x="120" y="96" width="10" height="4" rx="2"/><rect x="215" y="96" width="10" height="4" rx="2"/><rect x="310" y="96" width="10" height="4" rx="2"/><rect x="405" y="96" width="10" height="4" rx="2"/></g>
+  <!-- splashback -->
+  <rect x="40" y="140" width="380" height="80" fill="url(#sb)"/>
+  <!-- bench -->
+  <rect x="34" y="218" width="392" height="12" rx="3" fill="#10272f"/>
+  <rect x="40" y="230" width="380" height="140" fill="#fff"/>
+  <g stroke="#e3ecea" stroke-width="3"><path d="M135 230v140M230 230v140M325 230v140"/></g>
+  <!-- coffee machine, kettle, sink, mugs -->
+  <rect x="60" y="160" width="54" height="58" rx="6" fill="#10272f"/><rect x="72" y="184" width="30" height="20" rx="3" fill="#2e5360"/><rect x="78" y="206" width="18" height="12" rx="2" fill="#fff"/>
+  <path d="M130 218v-30h30v30Z" fill="#aebdba"/><rect x="138" y="180" width="14" height="8" rx="3" fill="#8d9ea2"/>
+  <path d="M270 216v-34a12 12 0 0 1 24 0" fill="none" stroke="#aebdba" stroke-width="5" stroke-linecap="round"/>
+  <rect x="236" y="214" width="80" height="4" rx="2" fill="#c3d0cd"/>
+  <g fill="#f4b63f"><rect x="350" y="200" width="16" height="18" rx="4"/></g><rect x="372" y="200" width="16" height="18" rx="4" fill="#0e7f79"/>
+  <!-- tall fridge -->
+  <rect x="440" y="40" width="100" height="330" rx="6" fill="#dfe7e5"/>
+  <path d="M440 150h100" stroke="#c3d0cd" stroke-width="3"/>
+  <rect x="524" y="80" width="5" height="50" rx="2.5" fill="#8d9ea2"/><rect x="524" y="170" width="5" height="80" rx="2.5" fill="#8d9ea2"/>
+  <!-- noticeboard -->
+  <rect x="560" y="60" width="60" height="80" rx="4" fill="#c9a97e"/>
+  <g fill="#fff"><rect x="568" y="70" width="20" height="24" rx="2"/><rect x="594" y="76" width="18" height="20" rx="2"/><rect x="570" y="104" width="40" height="26" rx="2"/></g>
+  <!-- break table + stools -->
+  <rect x="150" y="330" width="220" height="14" rx="4" fill="#c9a97e"/>
+  <rect x="180" y="344" width="10" height="90" fill="#10272f"/><rect x="330" y="344" width="10" height="90" fill="#10272f"/>
+  <g fill="#0b6e69"><rect x="140" y="380" width="54" height="16" rx="8"/><rect x="326" y="380" width="54" height="16" rx="8"/></g>
+  <g stroke="#10272f" stroke-width="4"><path d="M167 396v50M353 396v50"/></g>
+  <circle cx="260" cy="322" r="8" fill="#fff" stroke="#d6e3e0" stroke-width="2"/>
+  <!-- bins -->
+  <rect x="560" y="330" width="34" height="46" rx="4" fill="#0b6e69"/><rect x="598" y="330" width="34" height="46" rx="4" fill="#f4b63f"/>
+  <g fill="#fff"><use href="#s" transform="translate(200 180) scale(1.1)"/><use href="#s" transform="translate(490 110) scale(1)"/></g>
+  <g fill="#f4b63f"><use href="#s" transform="translate(400 290) scale(.9)"/><use href="#s" transform="translate(100 300) scale(.7)"/></g>
+</svg>

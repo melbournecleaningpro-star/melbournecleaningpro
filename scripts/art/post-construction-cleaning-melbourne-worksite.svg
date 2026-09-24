@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d2e8ef"/><stop offset="1" stop-color="#f2f7f5"/></linearGradient>
+    <pattern id="tile" width="40" height="20" patternUnits="userSpaceOnUse"><rect width="40" height="20" fill="#f8f8f5"/><path d="M0 0h40M0 0v20" stroke="#e3e6e1" stroke-width="1.2"/></pattern>
+    <clipPath id="glass"><rect x="428" y="48" width="174" height="312"/></clipPath>
+    <path id="s" d="M0-10Q1.3-1.3 10 0Q1.3 1.3 0 10Q-1.3 1.3-10 0Q-1.3-1.3 0-10Z"/>
+  </defs>
+  <rect width="640" height="480" fill="#f5f3ee"/>
+  <!-- polished concrete floor -->
+  <rect y="360" width="640" height="120" fill="#d5d4cd"/>
+  <path d="M0 360h640" stroke="#c4c3bb" stroke-width="3"/>
+  <path d="M110 480l140-120M330 480l90-120" stroke="#fff" stroke-width="12" opacity=".35" stroke-linecap="round"/>
+  <!-- tall new window / sliding door -->
+  <rect x="420" y="40" width="190" height="320" fill="#10272f"/>
+  <rect x="428" y="48" width="174" height="312" fill="url(#sky)"/>
+  <g clip-path="url(#glass)"><ellipse cx="480" cy="360" rx="90" ry="50" fill="#a6cdb7"/><ellipse cx="580" cy="370" rx="80" ry="50" fill="#8fc1a4"/></g>
+  <rect x="512" y="48" width="6" height="312" fill="#10272f"/>
+  <!-- pendant lights -->
+  <path d="M170 0v70M250 0v70M330 0v70" stroke="#10272f" stroke-width="2"/>
+  <g fill="#f4b63f"><path d="M158 70h24l6 16h-36Z"/><path d="M238 70h24l6 16h-36Z"/><path d="M318 70h24l6 16h-36Z"/></g>
+  <!-- rear kitchen wall: cabinets + tiled splashback -->
+  <rect x="30" y="100" width="370" height="70" fill="#fff"/>
+  <g stroke="#e6e9e5" stroke-width="3"><path d="M122 100v70M214 100v70M306 100v70"/></g>
+  <rect x="30" y="170" width="370" height="70" fill="url(#tile)"/>
+  <rect x="24" y="238" width="382" height="12" rx="2" fill="#10272f"/>
+  <rect x="30" y="250" width="370" height="110" fill="#0b6e69"/>
+  <g stroke="#08524e" stroke-width="3"><path d="M122 250v110M214 250v110M306 250v110"/></g>
+  <path d="M260 238v-34a12 12 0 0 1 24 0" fill="none" stroke="#aebdba" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#10272f" opacity=".7"><ellipse cx="110" cy="240" rx="18" ry="3"/><ellipse cx="160" cy="240" rx="18" ry="3"/></g>
+  <!-- island -->
+  <rect x="120" y="296" width="260" height="14" rx="3" fill="#fbfaf6" stroke="#e3dccf" stroke-width="2"/>
+  <rect x="130" y="310" width="240" height="60" fill="#fff"/>
+  <g stroke="#e8ecea" stroke-width="3"><path d="M210 310v60M290 310v60"/></g>
+  <!-- stools -->
+  <g fill="#c9a97e"><rect x="150" y="340" width="40" height="10" rx="5"/><rect x="310" y="340" width="40" height="10" rx="5"/></g>
+  <g stroke="#10272f" stroke-width="3"><path d="M160 350v40M180 350v40M320 350v40M340 350v40"/></g>
+  <!-- worksite state: drop sheet, ladder, paint tin, tape, dust -->
+  <defs><filter id="dust"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .55  0 0 0 0 .5  0 0 0 0 .42  0 0 0 .55 0"/></filter></defs>
+  <path d="M0 392 200 372 420 386 640 370v110H0Z" fill="#e9e4d6" opacity=".95"/>
+  <path d="M60 400l60 20M260 392l40 26M480 384l50 22" stroke="#d6cfbd" stroke-width="3" fill="none"/>
+  <g transform="translate(470 160)"><path d="M0 240 40 0M60 240 40 0" stroke="#c9a97e" stroke-width="8" stroke-linecap="round"/><g stroke="#c9a97e" stroke-width="6"><path d="M10 180h44M18 120h32M26 60h18"/></g></g>
+  <rect x="560" y="380" width="44" height="50" rx="4" fill="#fff" stroke="#aebdba" stroke-width="3"/><rect x="560" y="376" width="44" height="8" rx="3" fill="#aebdba"/><path d="M566 398c10 6 22 6 32 0" stroke="#0b6e69" stroke-width="4" fill="none"/>
+  <g stroke="#f4b63f" stroke-width="6" opacity=".9"><path d="M436 60l60 60M496 60l-60 60"/><path d="M526 60l60 60M586 60l-60 60"/></g>
+  <g fill="#b9b3a4"><rect x="180" y="430" width="40" height="8" rx="2" transform="rotate(-12 200 434)"/><rect x="360" y="440" width="30" height="7" rx="2" transform="rotate(8 375 443)"/><circle cx="300" cy="420" r="4"/><circle cx="130" cy="446" r="3"/></g>
+  <g fill="#bdb6a5" opacity=".75"><ellipse cx="250" cy="300" rx="70" ry="4"/><ellipse cx="200" cy="239" rx="90" ry="3"/></g>
+  <rect width="640" height="480" filter="url(#dust)" opacity=".55"/>
+  <rect width="640" height="480" fill="#d8d0bd" opacity=".22"/>
+</svg>
+

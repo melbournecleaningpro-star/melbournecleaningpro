@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <pattern id="tile" width="32" height="20" patternUnits="userSpaceOnUse">
+      <rect width="32" height="20" fill="#f7fbfa"/><path d="M0 0h32M0 10h32M0 0v10M16 10v10" stroke="#dbe8e5" stroke-width="1.5"/>
+    </pattern>
+    <path id="s" d="M0-10Q1.3-1.3 10 0Q1.3 1.3 0 10Q-1.3 1.3-10 0Q-1.3-1.3 0-10Z"/>
+  </defs>
+  <rect width="640" height="480" fill="#eaf4f1"/>
+  <rect y="410" width="640" height="70" fill="#e6dccb"/>
+
+  <!-- upper cabinets -->
+  <rect x="40" y="40" width="210" height="110" rx="6" fill="#fff"/>
+  <path d="M145 40v110" stroke="#e3ecea" stroke-width="3"/>
+  <rect x="126" y="112" width="4" height="22" rx="2" fill="#b8c2c5"/><rect x="160" y="112" width="4" height="22" rx="2" fill="#b8c2c5"/>
+  <rect x="430" y="40" width="170" height="110" rx="6" fill="#fff"/>
+  <path d="M515 40v110" stroke="#e3ecea" stroke-width="3"/>
+  <rect x="496" y="112" width="4" height="22" rx="2" fill="#b8c2c5"/><rect x="530" y="112" width="4" height="22" rx="2" fill="#b8c2c5"/>
+
+  <!-- rangehood -->
+  <rect x="304" y="30" width="72" height="80" fill="#d5dfdd"/>
+  <path d="M270 110h140l18 36H252Z" fill="#c3d0cd"/>
+  <rect x="252" y="146" width="176" height="8" rx="3" fill="#aebdba"/>
+  <path d="M300 128h80" stroke="#fff" stroke-width="3" opacity=".7" stroke-linecap="round"/>
+
+  <!-- splashback -->
+  <rect x="40" y="170" width="560" height="84" fill="url(#tile)"/>
+
+  <!-- benchtop + base cabinets -->
+  <rect x="30" y="252" width="580" height="16" rx="4" fill="#10272f"/>
+  <rect x="40" y="268" width="560" height="142" fill="#fff"/>
+  <g stroke="#e3ecea" stroke-width="3"><path d="M180 268v142M252 268v142M428 268v142M520 268v142"/></g>
+  <g fill="#b8c2c5"><rect x="100" y="286" width="40" height="4" rx="2"/><rect x="196" y="286" width="40" height="4" rx="2"/><rect x="454" y="286" width="40" height="4" rx="2"/><rect x="540" y="286" width="40" height="4" rx="2"/></g>
+
+  <!-- oven -->
+  <rect x="262" y="276" width="156" height="126" rx="6" fill="#dfe7e5"/>
+  <rect x="276" y="306" width="128" height="80" rx="6" fill="#10272f" opacity=".85"/>
+  <path d="M290 318l30 50M318 318l20 34" stroke="#fff" stroke-width="3" opacity=".25" stroke-linecap="round"/>
+  <rect x="290" y="288" width="100" height="6" rx="3" fill="#aebdba"/>
+
+  <!-- cooktop -->
+  <g fill="#1f3c46"><ellipse cx="302" cy="258" rx="22" ry="4"/><ellipse cx="378" cy="258" rx="22" ry="4"/></g>
+
+  <!-- sink + tap -->
+  <rect x="96" y="254" width="96" height="6" rx="3" fill="#c3d0cd"/>
+  <path d="M168 254v-44a14 14 0 0 0-28 0" fill="none" stroke="#aebdba" stroke-width="6" stroke-linecap="round"/>
+  <rect x="162" y="244" width="14" height="10" rx="2" fill="#aebdba"/>
+
+  <!-- spray bottle + cloth on bench -->
+  <rect x="466" y="206" width="30" height="48" rx="8" fill="#fff" stroke="#cfe0dc" stroke-width="2"/>
+  <rect x="472" y="222" width="18" height="16" rx="3" fill="#d9eeea"/>
+  <rect x="473" y="192" width="16" height="16" rx="3" fill="#0b6e69"/>
+  <path d="M468 180h32l5 12h-37Z" fill="#0b6e69"/>
+  <rect x="502" y="182" width="14" height="6" rx="3" fill="#08524e"/>
+  <path d="M520 254c4-12 30-14 44-6 2 4-2 6-4 6Z" fill="#f4b63f"/>
+
+  <!-- plant on bench -->
+  <rect x="548" y="226" width="30" height="28" rx="6" fill="#fff"/>
+  <path d="M563 226c-10-14-8-28 0-36 8 8 10 22 0 36Z" fill="#3e8e6a"/>
+  <path d="M563 226c6-12 18-18 26-16-2 10-14 16-26 16Z" fill="#5faf88"/>
+
+  <!-- sparkles -->
+  <g fill="#fff"><use href="#s" transform="translate(340 130) scale(1.1)"/><use href="#s" transform="translate(620 200) scale(.8)"/></g>
+  <g fill="#f4b63f"><use href="#s" transform="translate(222 230) scale(1)"/><use href="#s" transform="translate(410 330) scale(.8)"/><use href="#s" transform="translate(80 208) scale(.7)"/></g>
+</svg>

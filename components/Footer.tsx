@@ -10,6 +10,7 @@ const extraServices = [
   { title: "Post-Construction Cleaning", href: "/services/post-construction-cleaning/" },
   { title: "Spring Cleaning", href: "/services/spring-cleaning/" },
   { title: "Window Cleaning", href: "/services/window-cleaning/" },
+  { title: "Carpet Cleaning", href: "/services/carpet-cleaning/" },
 ].filter((s) =>
   isLiveRoute(s.href),
 );

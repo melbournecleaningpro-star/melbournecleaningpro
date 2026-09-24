@@ -16,5 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/services/post-construction-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/spring-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/window-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteConfig.url}/services/carpet-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
   ];
 }

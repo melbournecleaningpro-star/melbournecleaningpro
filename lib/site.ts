@@ -65,6 +65,7 @@ const LIVE_ROUTES = new Set<string>([
   "/contact/",
   "/privacy-policy/",
   "/quote/",
+  "/faq/",
   "/services/end-of-lease-cleaning/",
   "/services/commercial-cleaning/",
   "/services/deep-cleaning/",
@@ -110,5 +111,6 @@ export const navItems = [
   { label: "Services", href: routeHref("/services/", "/#services") },
   { label: "Areas We Serve", href: routeHref("/areas/", "/#areas") },
   { label: "About", href: routeHref("/about/", "/#why-us") },
+  { label: "FAQ", href: routeHref("/faq/", "/#faq") },
   { label: "Contact", href: routeHref("/contact/", "#contact") },
 ] as const;

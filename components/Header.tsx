@@ -1,10 +1,10 @@
 import { Phone } from "lucide-react";
-import { navItems, quoteHref, siteConfig } from "@/lib/site";
+import { headerQuoteHref, navItems, siteConfig } from "@/lib/site";
 import { Logo } from "./Logo";
 import { MobileNav } from "./MobileNav";
 import { ButtonLink, Container } from "./ui";
 
-export function Header() {
+export function Header({ current }: { current?: "quote" } = {}) {
   return (
     <header className="sticky top-0 z-50 border-b border-line/80 bg-white/95 supports-[backdrop-filter]:bg-white/85 supports-[backdrop-filter]:backdrop-blur-md">
       <a
@@ -41,7 +41,11 @@ export function Header() {
             <Phone className="h-4 w-4 text-brand" aria-hidden="true" />
             {siteConfig.contact.phone.display}
           </a>
-          <ButtonLink href={quoteHref} className="whitespace-nowrap">
+          <ButtonLink
+            href={headerQuoteHref}
+            aria-current={current === "quote" ? "page" : undefined}
+            className="whitespace-nowrap aria-[current=page]:ring-4 aria-[current=page]:ring-brand/20"
+          >
             Get a Free Quote
           </ButtonLink>
         </div>

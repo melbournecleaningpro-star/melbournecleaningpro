@@ -47,7 +47,7 @@ const sections: Section[] = [
       <>
         <P>
           This Privacy Policy explains how {name} handles personal information collected through this website. It
-          covers information you choose to give us through the enquiry form and by email, and the limited technical
+          covers information you choose to give us through the enquiry and quote forms and by email, and the limited technical
           information involved in delivering the website to you.
         </P>
         <P>
@@ -71,7 +71,11 @@ const sections: Section[] = [
             "Your suburb or area",
             "The type of property",
             "The cleaning service you're asking about",
-            "Your preferred date",
+            "Your preferred date and time",
+            "Bedrooms, bathrooms and approximate property size",
+            "How often you'd like cleaning, and the areas you'd like us to focus on",
+            "Your answer to a short follow-up question about some services",
+            "Your preferred contact method",
             "Cleaning requirements and anything else you write in your message",
           ]}
         />
@@ -95,12 +99,12 @@ const sections: Section[] = [
         <UL
           items={[
             <>
-              <strong className="font-semibold text-ink">The enquiry form.</strong> The form on our{" "}
-              <a href="/contact/" className={a}>contact page</a> doesn&apos;t upload anything to the website. When you
-              submit it, it opens your own email app with your details written into a new email addressed to us.
+              <strong className="font-semibold text-ink">The enquiry and quote forms.</strong> The forms on our{" "}
+              <a href="/contact/" className={a}>contact page</a> and <a href="/quote/" className={a}>quote page</a>{" "}
+              don&apos;t upload anything to the website. When you submit one, it opens your own email app with your details written into a new email addressed to us.
               Nothing is sent until you press send, and the message travels through your email provider like any other
-              email you write. The form&apos;s optional &ldquo;copy my enquiry&rdquo; button only copies the text to
-              your device&apos;s clipboard when you click it.
+              email you write. The optional &ldquo;copy&rdquo; button only copies the text to your device&apos;s
+              clipboard when you click it.
             </>,
             <>
               <strong className="font-semibold text-ink">Email.</strong> When you email us directly, we receive the
@@ -207,7 +211,7 @@ const sections: Section[] = [
       <>
         <P>
           We take reasonable steps to protect information from unauthorised access, loss, misuse or disclosure. Because
-          the enquiry form doesn&apos;t store submissions, there&apos;s no database of enquiries on the website itself.
+          our forms don&apos;t store submissions, there&apos;s no database of enquiries on the website itself.
         </P>
         <P>
           No method of sending or storing information online is completely secure, so we can&apos;t guarantee the
@@ -302,7 +306,7 @@ const sections: Section[] = [
 export const tocSections = sections.map(({ id, title }) => ({ id, title }));
 
 const glance = [
-  "The enquiry form opens your own email app. Nothing is sent until you press send.",
+  "Our enquiry and quote forms open your own email app. Nothing is sent until you press send.",
   "No cookies, analytics or tracking tools are used on this website.",
   "We use what you send us to reply, quote and arrange cleaning, never for advertising.",
 ];

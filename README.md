@@ -1,6 +1,6 @@
 # Melbourne Cleaning Pro: Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
+Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Quote (`/quote/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
 
 ## Scripts
 
@@ -66,3 +66,13 @@ number is hidden on the contact page while it is still a placeholder.
 cookies, analytics, storage or third-party scripts, self-hosted fonts, and
 Cloudflare hosting. If you add analytics, a form service, embeds or any other
 provider, update `components/privacy/Policy.tsx` and its `LAST_UPDATED` date.
+
+## Quote form
+
+`/quote/` is a five-step quote request (service, property, cleaning details,
+your details, review). With no backend configured it opens the visitor's email
+app with the request pre-filled, and says it's ready to send, not sent. To post
+to a hosted form service instead, set `NEXT_PUBLIC_QUOTE_ENDPOINT` at build
+time (see `lib/quote.ts`); the page then shows a real "sent" or "couldn't send"
+result from that service. Update the privacy policy if you do. Service pages
+can pre-select a service with `/quote/?service=<id>`.

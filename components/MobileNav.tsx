@@ -2,7 +2,7 @@
 
 import { Menu, Phone, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { navItems, quoteHref, siteConfig } from "@/lib/site";
+import { headerQuoteHref, navItems, siteConfig } from "@/lib/site";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -55,7 +55,7 @@ export function MobileNav() {
           </ul>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             <a
-              href={quoteHref}
+              href={headerQuoteHref}
               onClick={close}
               className="inline-flex items-center justify-center rounded-full bg-brand px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
             >

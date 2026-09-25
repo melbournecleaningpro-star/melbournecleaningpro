@@ -64,6 +64,7 @@ const LIVE_ROUTES = new Set<string>([
   "/about/",
   "/contact/",
   "/privacy-policy/",
+  "/quote/",
   "/services/end-of-lease-cleaning/",
   "/services/commercial-cleaning/",
   "/services/deep-cleaning/",
@@ -90,6 +91,9 @@ export function routeHref(futurePath: string, fallback: string): string {
 
 /** Every page renders a section with id="quote". */
 export const quoteHref = "#quote";
+
+/** The header CTA goes to the dedicated quote page once it exists. */
+export const headerQuoteHref = routeHref("/quote/", quoteHref);
 
 export function quoteMailto(subject: string, body: string): string {
   return `${siteConfig.contact.email.href}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

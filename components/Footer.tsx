@@ -68,6 +68,13 @@ export function Footer() {
                 </a>
               </li>
             ))}
+            {isLiveRoute("/quote/") && (
+              <li>
+                <a href="/quote/" className="transition-colors hover:text-white">
+                  Get a Quote
+                </a>
+              </li>
+            )}
           </ul>
         </nav>
 

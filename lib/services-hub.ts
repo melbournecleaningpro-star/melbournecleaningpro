@@ -111,6 +111,12 @@ export const services = {
     path: "/services/blind-cleaning/",
     description: "Cleaning for suitable venetian, vertical and roller blinds.",
   }),
+  ndis: service({
+    id: "ndis",
+    name: "NDIS Cleaning",
+    path: "/services/ndis-cleaning/",
+    description: "Household cleaning arranged around a participant's routine and preferences.",
+  }),
   pressure: service({
     id: "pressure",
     name: "Pressure Cleaning",
@@ -140,7 +146,7 @@ export const residentialGroups: { title: string; intro: string; keys: ServiceKey
   {
     title: "Keeping a home clean",
     intro: "Routine cleaning, a more detailed clean, or a seasonal refresh.",
-    keys: ["house", "deep", "spring"],
+    keys: ["house", "deep", "spring", "ndis"],
     layout: "rows",
   },
   {
@@ -191,6 +197,7 @@ export const scenarios: { quote: string; key: ServiceKey }[] = [
   { quote: "My oven needs a proper clean.", key: "oven" },
   { quote: "The grout in my bathroom looks dirty.", key: "tile" },
   { quote: "My driveway and paths look weathered.", key: "pressure" },
+  { quote: "I'm arranging regular cleaning for an NDIS participant.", key: "ndis" },
   { quote: "I need office cleaning.", key: "office" },
   { quote: "I need cleaning for a business.", key: "commercial" },
 ];

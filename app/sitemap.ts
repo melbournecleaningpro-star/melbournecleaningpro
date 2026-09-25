@@ -32,5 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/services/tile-and-grout-cleaning/`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteConfig.url}/services/blind-cleaning/`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteConfig.url}/services/pressure-cleaning/`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteConfig.url}/services/ndis-cleaning/`, changeFrequency: "monthly", priority: 0.8 },
   ];
 }

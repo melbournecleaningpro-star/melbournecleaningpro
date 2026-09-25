@@ -33,6 +33,7 @@ export type ServiceId =
   | "tile"
   | "blinds"
   | "pressure"
+  | "ndis"
   | "not-sure";
 
 type Frequency = "full" | "occasional" | "none";
@@ -63,6 +64,7 @@ export const serviceOptions: ServiceOption[] = [
   { id: "mattress", name: "Mattress Cleaning", line: "Refreshing well-used mattresses.", path: "/services/mattress-cleaning/", frequency: "occasional", areas: "none" },
   { id: "tile", name: "Tile & Grout Cleaning", line: "Tiled surfaces and grout lines.", path: "/services/tile-and-grout-cleaning/", frequency: "occasional", areas: "none" },
   { id: "blinds", name: "Blind Cleaning", line: "Venetian, vertical and roller blinds.", path: "/services/blind-cleaning/", frequency: "occasional", areas: "none" },
+  { id: "ndis", name: "NDIS Cleaning", line: "Household cleaning arranged around a routine.", path: "/services/ndis-cleaning/", frequency: "full", areas: "home" },
   { id: "pressure", name: "Pressure Cleaning", line: "Driveways, paths, patios and outdoor surfaces.", path: "/services/pressure-cleaning/", frequency: "occasional", areas: "none" },
   { id: "office", name: "Office Cleaning", line: "Scheduled cleaning for workplaces.", path: "/services/office-cleaning/", frequency: "full", areas: "work" },
   { id: "commercial", name: "Commercial Cleaning", line: "Shops, studios and business premises.", path: "/services/commercial-cleaning/", frequency: "full", areas: "work" },
@@ -98,6 +100,7 @@ export const serviceQuestions: Partial<Record<ServiceId, { question: string; opt
   mattress: { question: "How many mattresses would you like cleaned?", options: ["1", "2", "3", "4+", "Not sure"] },
   tile: { question: "Which tiled areas would you like cleaned?", options: ["Bathroom", "Kitchen", "Floors", "Laundry", "A mix of areas", "Not sure"] },
   blinds: { question: "What type of blinds do you have?", options: ["Venetian", "Vertical", "Roller", "A mix", "Not sure"] },
+  ndis: { question: "Who is arranging the cleaning?", options: ["The person receiving it", "A family member", "A carer", "A support coordinator", "Someone else"] },
   pressure: { question: "Which outdoor areas would you like cleaned?", options: ["Driveway", "Paths", "Patio / outdoor area", "A mix of areas", "Not sure"] },
   upholstery: { question: "What type of furniture would you like cleaned?", options: ["Sofa / couch", "Armchairs", "Dining chairs", "Ottoman", "A mix of pieces", "Not sure"] },
 };

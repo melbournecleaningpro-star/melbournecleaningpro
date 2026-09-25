@@ -1,6 +1,6 @@
 # Melbourne Cleaning Pro: Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), House Cleaning (`/services/house-cleaning/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Terms & Conditions (`/terms-and-conditions/`), Quote (`/quote/`), FAQ (`/faq/`), Service Areas (`/service-areas/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) Carpet Cleaning (`/services/carpet-cleaning/`) Upholstery Cleaning (`/services/upholstery-cleaning/`), Oven Cleaning (`/services/oven-cleaning/`), Mattress Cleaning (`/services/mattress-cleaning/`), Tile & Grout Cleaning (`/services/tile-and-grout-cleaning/`) Blind Cleaning (`/services/blind-cleaning/`) and Pressure Cleaning (`/services/pressure-cleaning/`).
+Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), House Cleaning (`/services/house-cleaning/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Terms & Conditions (`/terms-and-conditions/`), Quote (`/quote/`), FAQ (`/faq/`), Service Areas (`/service-areas/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) Carpet Cleaning (`/services/carpet-cleaning/`) Upholstery Cleaning (`/services/upholstery-cleaning/`), Oven Cleaning (`/services/oven-cleaning/`), Mattress Cleaning (`/services/mattress-cleaning/`), Tile & Grout Cleaning (`/services/tile-and-grout-cleaning/`) Blind Cleaning (`/services/blind-cleaning/`) Pressure Cleaning (`/services/pressure-cleaning/`) and NDIS Cleaning (`/services/ndis-cleaning/`).
 
 ## Scripts
 
@@ -89,3 +89,10 @@ legal entity / ABN), update those sections and `LAST_UPDATED`. Have the page rev
 `/service-areas/` is one hand-written page. Its regions and suburbs come from what the business already
 states (`serviceAreas` in `lib/content.ts`), shown as examples rather than boundaries. There are no
 location routes; add any future suburb page manually.
+
+## NDIS Cleaning page
+
+`/services/ndis-cleaning/` describes household cleaning arranged around a participant's routine. It
+deliberately makes no claim of NDIS registration, provider status or funding eligibility. If the
+business becomes a registered provider, update `components/ndis-cleaning/Routine.tsx` (FundingInfo)
+and the FAQs in `lib/ndis-cleaning.ts` accordingly.

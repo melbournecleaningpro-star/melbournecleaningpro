@@ -45,6 +45,7 @@ export const specialist: { label: string; path: string }[] = [
   { label: "Tile & Grout Cleaning", path: "/services/tile-and-grout-cleaning/" },
   { label: "Blind Cleaning", path: "/services/blind-cleaning/" },
   { label: "Pressure Cleaning", path: "/services/pressure-cleaning/" },
+  { label: "NDIS Cleaning", path: "/services/ndis-cleaning/" },
 ];
 
 export const principles = [

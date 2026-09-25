@@ -30,6 +30,7 @@ export const serviceOptions = [
   "Tile & Grout Cleaning",
   "Blind Cleaning",
   "Pressure Cleaning",
+  "NDIS Cleaning",
   "Other / Not Sure",
 ];
 

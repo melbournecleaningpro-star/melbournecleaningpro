@@ -26,7 +26,7 @@ export const faqCategories: FaqCategory[] = [
     items: [
       {
         q: "What cleaning services does Melbourne Cleaning Pro offer?",
-        a: "For homes, we offer house cleaning, deep cleaning, end of lease cleaning, move-in cleaning, spring cleaning, Airbnb cleaning, post-construction cleaning, window cleaning, carpet cleaning, upholstery cleaning, oven cleaning, mattress cleaning, tile and grout cleaning and blind cleaning, plus pressure cleaning for outdoor surfaces. For businesses, we offer commercial cleaning and office cleaning.",
+        a: "For homes, we offer house cleaning, deep cleaning, end of lease cleaning, move-in cleaning, spring cleaning, Airbnb cleaning, post-construction cleaning, window cleaning, carpet cleaning, upholstery cleaning, oven cleaning, mattress cleaning, tile and grout cleaning and blind cleaning, plus pressure cleaning for outdoor surfaces and household cleaning arranged around NDIS participants' routines. For businesses, we offer commercial cleaning and office cleaning.",
         links: [{ path: "/services/", label: "Browse all services" }],
       },
       {

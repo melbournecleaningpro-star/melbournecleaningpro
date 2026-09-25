@@ -17,6 +17,7 @@ const extraServices = [
   { title: "Tile & Grout Cleaning", href: "/services/tile-and-grout-cleaning/" },
   { title: "Blind Cleaning", href: "/services/blind-cleaning/" },
   { title: "Pressure Cleaning", href: "/services/pressure-cleaning/" },
+  { title: "NDIS Cleaning", href: "/services/ndis-cleaning/" },
 ].filter((s) =>
   isLiveRoute(s.href),
 );

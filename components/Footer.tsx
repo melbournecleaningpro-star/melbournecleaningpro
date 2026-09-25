@@ -112,7 +112,14 @@ export function Footer() {
           <p>
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
-          <p>Cleaning services in Melbourne, Victoria.</p>
+          <p className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            {isLiveRoute("/privacy-policy/") && (
+              <a href="/privacy-policy/" className="underline-offset-4 transition-colors hover:text-white hover:underline">
+                Privacy Policy
+              </a>
+            )}
+            <span>Cleaning services in Melbourne, Victoria.</span>
+          </p>
         </Container>
       </div>
     </footer>

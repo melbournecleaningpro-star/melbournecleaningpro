@@ -1,6 +1,6 @@
 # Melbourne Cleaning Pro: Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
+Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
 
 ## Scripts
 
@@ -59,3 +59,10 @@ sent until the visitor presses send, and the success message says so. To use a
 hosted form service instead, replace `sendEnquiry` in
 `components/contact/EnquiryForm.tsx` and keep any keys server-side. The phone
 number is hidden on the contact page while it is still a placeholder.
+
+## Privacy policy
+
+`/privacy-policy/` describes the site as built: mailto-based enquiry form, no
+cookies, analytics, storage or third-party scripts, self-hosted fonts, and
+Cloudflare hosting. If you add analytics, a form service, embeds or any other
+provider, update `components/privacy/Policy.tsx` and its `LAST_UPDATED` date.

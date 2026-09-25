@@ -158,6 +158,7 @@ export const notSure: { q: string; label: string; path: string }[] = [
   { q: "Short-term rental?", label: "Airbnb cleaning", path: "/services/airbnb-cleaning/" },
   { q: "Furniture needs attention?", label: "Upholstery cleaning", path: "/services/upholstery-cleaning/" },
   { q: "Carpet needs attention?", label: "Carpet cleaning", path: "/services/carpet-cleaning/" },
+  { q: "Oven needs a proper clean?", label: "Oven cleaning", path: "/services/oven-cleaning/" },
 ];
 
 export const quoteFactors = ["Property size", "Number of rooms", "Cleaning requirements", "Property condition", "Requested frequency", "Specific priorities"];

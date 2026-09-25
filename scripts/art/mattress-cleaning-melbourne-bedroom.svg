@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef0f6"/><stop offset="1" stop-color="#f7f4ef"/></linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff8e6" stop-opacity=".9"/><stop offset="1" stop-color="#fff8e6" stop-opacity="0"/></linearGradient>
+    <pattern id="quilt" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#fbfaf7"/><path d="M0 14h28M14 0v28" stroke="#e6e2da" stroke-width="1.2"/><circle cx="14" cy="14" r="1.6" fill="#dcd6cb"/></pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#wall)"/>
+  <!-- window with morning light -->
+  <rect x="560" y="50" width="170" height="210" rx="6" fill="#dbe9f0"/>
+  <path d="M645 50v210M560 155h170" stroke="#fff" stroke-width="6"/>
+  <path d="M560 260l-160 190h330l0-190Z" fill="url(#light)"/>
+  <!-- floor -->
+  <rect y="360" width="800" height="90" fill="#e8dcc8"/>
+  <path d="M0 360h800" stroke="#fff" stroke-width="5"/>
+  <!-- headboard -->
+  <rect x="150" y="140" width="330" height="140" rx="26" fill="#d9d2e6"/>
+  <path d="M170 160h290" stroke="#cbc3db" stroke-width="2" stroke-dasharray="6 8"/>
+  <!-- bed base -->
+  <rect x="130" y="300" width="370" height="54" rx="10" fill="#b7aecb"/>
+  <g fill="#8a7fa3"><rect x="146" y="352" width="10" height="14" rx="2"/><rect x="474" y="352" width="10" height="14" rx="2"/></g>
+  <!-- mattress, quilted, partly uncovered -->
+  <rect x="136" y="252" width="358" height="56" rx="16" fill="url(#quilt)" stroke="#e6e2da" stroke-width="2"/>
+  <path d="M140 300h350" stroke="#e1dcd2" stroke-width="3" stroke-dasharray="2 5"/>
+  <!-- folded-back duvet -->
+  <path d="M300 240h196c10 0 12 8 12 16v46c0 8-4 14-12 14H300c30-20 30-56 0-76Z" fill="#f2b8c6"/>
+  <path d="M300 240c30 20 30 56 0 76" fill="none" stroke="#e79fb1" stroke-width="3"/>
+  <!-- pillows -->
+  <rect x="164" y="218" width="104" height="44" rx="20" fill="#fff"/>
+  <rect x="278" y="220" width="96" height="40" rx="18" fill="#fff" opacity=".9"/>
+  <!-- bedside table + lamp -->
+  <rect x="520" y="286" width="70" height="74" rx="6" fill="#d6c7ad"/><rect x="530" y="310" width="50" height="4" rx="2" fill="#c3b294"/>
+  <path d="M555 286v-40" stroke="#8a7fa3" stroke-width="4"/><path d="M536 246h38l-8-30h-22Z" fill="#fbe3a6"/>
+  <!-- plant -->
+  <path d="M70 360c-10-70-2-120 22-160 20 56 14 116-22 160Z" fill="#8fc49a"/><path d="M52 330h40l-6 30h-28Z" fill="#fff"/>
+  <!-- rug -->
+  <ellipse cx="320" cy="410" rx="220" ry="24" fill="#d9d2e6" opacity=".6"/>
+</svg>

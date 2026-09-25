@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, ArrowRight, ArrowUpRight, Building2, ClipboardList, Home, MapPin, Sparkles, Store } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, BedDouble, Blinds, Building2, ClipboardList, CookingPot, Grid3x3, Home, MapPin, Sparkles, Store, type LucideIcon } from "lucide-react";
 import {
   choiceFactors,
   commercialKeys,
@@ -130,7 +130,11 @@ export function CategoryNav() {
   );
 }
 
+/** Icons for services shown without an image. */
+const rowIcons: Partial<Record<ServiceKey, LucideIcon>> = { house: Home, oven: CookingPot, mattress: BedDouble, tile: Grid3x3, blinds: Blinds };
+
 function ServiceRow({ k }: { k: ServiceKey }) {
+  const RowIcon = rowIcons[k] ?? Sparkles;
   const { name, description, image } = services[k];
   const href = hrefFor(k);
   const body = (
@@ -139,7 +143,7 @@ function ServiceRow({ k }: { k: ServiceKey }) {
         {image ? (
           <Image src={image.src} width={image.width} height={image.height} alt="" loading="lazy" sizes="112px" className="h-full w-full object-cover" />
         ) : (
-          <Sparkles className="absolute inset-0 m-auto h-6 w-6 text-brand" aria-hidden="true" />
+          <RowIcon className="absolute inset-0 m-auto h-7 w-7 text-brand" aria-hidden="true" />
         )}
       </span>
       <span className="min-w-0 flex-1">

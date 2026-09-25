@@ -106,6 +106,8 @@ const related = [
   { label: "House Cleaning", path: "/services/house-cleaning/", text: "Regular or one-off cleaning to keep your home fresh week to week." },
   { label: "End of Lease Cleaning", path: "/services/end-of-lease-cleaning/", text: "A detailed move-out clean for your final rental inspection." },
   { label: "Commercial Cleaning", path: "/services/commercial-cleaning/", text: "Scheduled cleaning for offices, retail spaces and workplaces." },
+  { label: "Oven Cleaning", path: "/services/oven-cleaning/", text: "Focused cleaning for grease and baked-on residue in the oven." },
+  { label: "Tile & Grout Cleaning", path: "/services/tile-and-grout-cleaning/", text: "Extra attention for tiled areas and grout lines." },
 ];
 
 export function AreaAndRelated() {

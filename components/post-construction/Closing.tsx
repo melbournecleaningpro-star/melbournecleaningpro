@@ -116,6 +116,7 @@ export function ProjectSchedule() {
 
 const related = [
   { path: "/services/deep-cleaning/", before: "For rooms that weren't part of the renovation, a", anchor: "deep clean", after: "tackles built-up grime." },
+  { path: "/services/tile-and-grout-cleaning/", before: "New or existing tiles left dusty and marked? Ask about", anchor: "tile and grout cleaning", after: "." },
   { path: "/services/move-in-cleaning/", before: "Moving in after the renovation? Book a", anchor: "move-in clean before you unpack", after: "." },
   { path: "/services/house-cleaning/", before: "Once you're settled,", anchor: "regular house cleaning", after: "keeps it that way." },
   { path: "/services/end-of-lease-cleaning/", before: "Renovating a rental between tenants? See", anchor: "end of lease cleaning", after: "." },

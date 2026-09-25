@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9edee"/><stop offset=".5" stop-color="#cfd6d8"/><stop offset="1" stop-color="#b9c2c4"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3a40"/><stop offset="1" stop-color="#10272f"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".6" r=".6"><stop offset="0" stop-color="#f4b63f" stop-opacity=".55"/><stop offset="1" stop-color="#f4b63f" stop-opacity="0"/></radialGradient>
+    <pattern id="tile" width="40" height="20" patternUnits="userSpaceOnUse"><rect width="40" height="20" fill="#f4f1ea"/><path d="M0 19.5h40M20 0v10M0 10h40M0 10v10M40 10v10" stroke="#e3ddd1" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="640" height="480" fill="url(#tile)"/>
+  <!-- cabinetry around built-in oven -->
+  <rect x="120" y="40" width="400" height="440" fill="#0e7f79"/>
+  <path d="M120 40h400" stroke="#0b6e69" stroke-width="6"/>
+  <!-- oven body -->
+  <rect x="150" y="80" width="340" height="330" rx="10" fill="url(#steel)"/>
+  <!-- control strip -->
+  <rect x="150" y="80" width="340" height="56" rx="10" fill="#10272f"/>
+  <circle cx="196" cy="108" r="14" fill="#cfd6d8"/><path d="M196 96v10" stroke="#10272f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="444" cy="108" r="14" fill="#cfd6d8"/><path d="M444 108l8-6" stroke="#10272f" stroke-width="3" stroke-linecap="round"/>
+  <rect x="270" y="96" width="100" height="24" rx="4" fill="#1b3139"/>
+  <text x="320" y="113" text-anchor="middle" font-family="monospace" font-size="14" fill="#f4b63f">180°</text>
+  <!-- door + handle -->
+  <rect x="166" y="148" width="308" height="30" rx="4" fill="#dfe4e5"/>
+  <rect x="200" y="156" width="240" height="10" rx="5" fill="#8a9795"/>
+  <!-- door glass with interior -->
+  <rect x="180" y="190" width="280" height="200" rx="8" fill="url(#glass)"/>
+  <rect x="180" y="190" width="280" height="200" rx="8" fill="url(#glow)"/>
+  <!-- racks -->
+  <g stroke="#9aa6a8" stroke-width="2.5">
+    <path d="M200 262h240M200 330h240"/>
+    <path d="M220 262v-6M260 262v-6M300 262v-6M340 262v-6M380 262v-6M420 262v-6"/>
+  </g>
+  <!-- tray -->
+  <path d="M214 322h212l-10 10H224Z" fill="#6f7c7e"/>
+  <!-- dish on upper rack -->
+  <ellipse cx="320" cy="252" rx="58" ry="10" fill="#e0a126"/>
+  <path d="M262 252c0 14 26 22 58 22s58-8 58-22" fill="#c98a1e"/>
+  <!-- glass reflections -->
+  <path d="M196 380l60-176h26l-60 176Z" fill="#fff" opacity=".07"/>
+  <path d="M250 380l60-176h10l-60 176Z" fill="#fff" opacity=".05"/>
+  <!-- benchtop below -->
+  <rect x="100" y="420" width="440" height="14" rx="3" fill="#d9dfdd"/>
+  <!-- tea towel on handle -->
+  <path d="M380 160h26v58c-6 4-20 4-26 0Z" fill="#f4b63f"/><path d="M380 180h26M380 196h26" stroke="#fff" stroke-width="3" opacity=".6"/>
+</svg>

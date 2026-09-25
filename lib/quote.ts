@@ -28,6 +28,10 @@ export type ServiceId =
   | "window"
   | "carpet"
   | "upholstery"
+  | "oven"
+  | "mattress"
+  | "tile"
+  | "blinds"
   | "not-sure";
 
 type Frequency = "full" | "occasional" | "none";
@@ -54,6 +58,10 @@ export const serviceOptions: ServiceOption[] = [
   { id: "window", name: "Window Cleaning", line: "Accessible glass, frames and sills.", path: "/services/window-cleaning/", frequency: "occasional", areas: "none" },
   { id: "carpet", name: "Carpet Cleaning", line: "Refreshing carpeted rooms and walkways.", path: "/services/carpet-cleaning/", frequency: "occasional", areas: "none" },
   { id: "upholstery", name: "Upholstery Cleaning", line: "Sofas, armchairs and fabric furniture.", path: "/services/upholstery-cleaning/", frequency: "occasional", areas: "none" },
+  { id: "oven", name: "Oven Cleaning", line: "Grease and baked-on residue in the oven.", path: "/services/oven-cleaning/", frequency: "occasional", areas: "none" },
+  { id: "mattress", name: "Mattress Cleaning", line: "Refreshing well-used mattresses.", path: "/services/mattress-cleaning/", frequency: "occasional", areas: "none" },
+  { id: "tile", name: "Tile & Grout Cleaning", line: "Tiled surfaces and grout lines.", path: "/services/tile-and-grout-cleaning/", frequency: "occasional", areas: "none" },
+  { id: "blinds", name: "Blind Cleaning", line: "Venetian, vertical and roller blinds.", path: "/services/blind-cleaning/", frequency: "occasional", areas: "none" },
   { id: "office", name: "Office Cleaning", line: "Scheduled cleaning for workplaces.", path: "/services/office-cleaning/", frequency: "full", areas: "work" },
   { id: "commercial", name: "Commercial Cleaning", line: "Shops, studios and business premises.", path: "/services/commercial-cleaning/", frequency: "full", areas: "work" },
   { id: "not-sure", name: "Not Sure", line: "Describe the job and we'll suggest a service.", frequency: "full", areas: "home" },
@@ -84,6 +92,10 @@ export const serviceQuestions: Partial<Record<ServiceId, { question: string; opt
   airbnb: { question: "Is this cleaning between guest stays?", options: ["Yes", "No", "Not sure"] },
   window: { question: "Are the windows easily accessible?", options: ["Yes, easy to reach", "Some are hard to reach", "Not sure"] },
   carpet: { question: "Approximately how many rooms have carpet?", options: ["1", "2", "3", "4", "5+", "Not sure"] },
+  oven: { question: "What type of oven is it?", options: ["Single wall oven", "Double oven", "Freestanding oven / range", "Not sure"] },
+  mattress: { question: "How many mattresses would you like cleaned?", options: ["1", "2", "3", "4+", "Not sure"] },
+  tile: { question: "Which tiled areas would you like cleaned?", options: ["Bathroom", "Kitchen", "Floors", "Laundry", "A mix of areas", "Not sure"] },
+  blinds: { question: "What type of blinds do you have?", options: ["Venetian", "Vertical", "Roller", "A mix", "Not sure"] },
   upholstery: { question: "What type of furniture would you like cleaned?", options: ["Sofa / couch", "Armchairs", "Dining chairs", "Ottoman", "A mix of pieces", "Not sure"] },
 };
 

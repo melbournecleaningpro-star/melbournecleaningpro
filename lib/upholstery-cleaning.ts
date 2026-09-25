@@ -89,6 +89,7 @@ export const alsoNeed: { question: string; path: string; label: string }[] = [
   { question: "Moving out of a rental?", path: "/services/end-of-lease-cleaning/", label: "End of lease cleaning" },
   { question: "Need carpets cleaned too?", path: "/services/carpet-cleaning/", label: "Carpet cleaning" },
   { question: "Need windows cleaned?", path: "/services/window-cleaning/", label: "Window cleaning" },
+  { question: "Mattresses need a refresh too?", path: "/services/mattress-cleaning/", label: "Mattress cleaning" },
 ];
 
 export const quoteFactors = ["Type of furniture", "Number of items", "Material", "Condition", "Cleaning requirements", "Location and access"];

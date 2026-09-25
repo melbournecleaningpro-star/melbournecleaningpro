@@ -27,5 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/services/window-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/carpet-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/upholstery-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteConfig.url}/services/oven-cleaning/`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteConfig.url}/services/mattress-cleaning/`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteConfig.url}/services/tile-and-grout-cleaning/`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteConfig.url}/services/blind-cleaning/`, changeFrequency: "monthly", priority: 0.8 },
   ];
 }

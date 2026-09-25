@@ -10,7 +10,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-const title = `Cleaning Services Melbourne | ${siteConfig.name}`;
+const title = `${siteConfig.name} | House & Commercial Cleaning in Melbourne`;
 
 // Favicon, Apple touch icon, OG and Twitter images come from the metadata
 // file conventions in /app (favicon.ico, icon.svg, apple-icon.png,

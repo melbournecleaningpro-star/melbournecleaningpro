@@ -274,6 +274,7 @@ const suburbs = [
 const related = [
   { path: "/services/house-cleaning/", label: "House cleaning", note: "Keep the rest of the home tidy." },
   { path: "/services/deep-cleaning/", label: "Deep cleaning", note: "Heavy build-up throughout the home." },
+  { path: "/services/blind-cleaning/", label: "Blind cleaning", note: "Dust along slats and edges near the glass." },
   { path: "/services/spring-cleaning/", label: "Spring cleaning", note: "A seasonal whole-home refresh." },
   { path: "/services/commercial-cleaning/", label: "Commercial cleaning", note: "Business premises and shared spaces." },
   { path: "/services/office-cleaning/", label: "Office cleaning", note: "Scheduled workplace cleaning." },

@@ -12,6 +12,10 @@ const extraServices = [
   { title: "Window Cleaning", href: "/services/window-cleaning/" },
   { title: "Carpet Cleaning", href: "/services/carpet-cleaning/" },
   { title: "Upholstery Cleaning", href: "/services/upholstery-cleaning/" },
+  { title: "Oven Cleaning", href: "/services/oven-cleaning/" },
+  { title: "Mattress Cleaning", href: "/services/mattress-cleaning/" },
+  { title: "Tile & Grout Cleaning", href: "/services/tile-and-grout-cleaning/" },
+  { title: "Blind Cleaning", href: "/services/blind-cleaning/" },
 ].filter((s) =>
   isLiveRoute(s.href),
 );

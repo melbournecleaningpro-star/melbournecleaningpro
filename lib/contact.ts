@@ -25,6 +25,10 @@ export const serviceOptions = [
   "Window Cleaning",
   "Carpet Cleaning",
   "Upholstery Cleaning",
+  "Oven Cleaning",
+  "Mattress Cleaning",
+  "Tile & Grout Cleaning",
+  "Blind Cleaning",
   "Other / Not Sure",
 ];
 

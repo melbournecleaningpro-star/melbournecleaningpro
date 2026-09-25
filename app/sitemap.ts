@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/`, changeFrequency: "monthly", priority: 1 },
     { url: `${siteConfig.url}/services/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/about/`, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${siteConfig.url}/contact/`, changeFrequency: "yearly", priority: 0.6 },
     { url: `${siteConfig.url}/services/end-of-lease-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/commercial-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/deep-cleaning/`, changeFrequency: "monthly", priority: 0.9 },

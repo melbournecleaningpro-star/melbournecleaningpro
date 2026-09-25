@@ -62,6 +62,7 @@ const LIVE_ROUTES = new Set<string>([
   "/",
   "/services/",
   "/about/",
+  "/contact/",
   "/services/end-of-lease-cleaning/",
   "/services/commercial-cleaning/",
   "/services/deep-cleaning/",

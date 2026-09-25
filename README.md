@@ -1,6 +1,6 @@
 # Melbourne Cleaning Pro: Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
+Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
 
 ## Scripts
 
@@ -49,3 +49,13 @@ Every page ships with `noindex, nofollow` (meta tag + `X-Robots-Tag` header). To
 1. Set `NEXT_PUBLIC_ALLOW_INDEXING=true` in Cloudflare Pages environment variables.
 2. Delete the `X-Robots-Tag` block at the top of `public/_headers`.
 3. Rebuild and deploy.
+
+## Contact / enquiry form
+
+The form on `/contact/` validates in the browser and then opens the visitor's
+email app with the enquiry pre-filled and addressed to the email in
+`lib/site.ts`. The site is a static export with no form backend, so nothing is
+sent until the visitor presses send, and the success message says so. To use a
+hosted form service instead, replace `sendEnquiry` in
+`components/contact/EnquiryForm.tsx` and keep any keys server-side. The phone
+number is hidden on the contact page while it is still a placeholder.

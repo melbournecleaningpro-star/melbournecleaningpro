@@ -16,6 +16,7 @@ const extraServices = [
   { title: "Mattress Cleaning", href: "/services/mattress-cleaning/" },
   { title: "Tile & Grout Cleaning", href: "/services/tile-and-grout-cleaning/" },
   { title: "Blind Cleaning", href: "/services/blind-cleaning/" },
+  { title: "Pressure Cleaning", href: "/services/pressure-cleaning/" },
 ].filter((s) =>
   isLiveRoute(s.href),
 );

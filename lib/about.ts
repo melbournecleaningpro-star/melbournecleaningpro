@@ -39,6 +39,12 @@ export const specialist: { label: string; path: string }[] = [
   { label: "Window Cleaning", path: "/services/window-cleaning/" },
   { label: "Carpet Cleaning", path: "/services/carpet-cleaning/" },
   { label: "Post-Construction Cleaning", path: "/services/post-construction-cleaning/" },
+  { label: "Upholstery Cleaning", path: "/services/upholstery-cleaning/" },
+  { label: "Oven Cleaning", path: "/services/oven-cleaning/" },
+  { label: "Mattress Cleaning", path: "/services/mattress-cleaning/" },
+  { label: "Tile & Grout Cleaning", path: "/services/tile-and-grout-cleaning/" },
+  { label: "Blind Cleaning", path: "/services/blind-cleaning/" },
+  { label: "Pressure Cleaning", path: "/services/pressure-cleaning/" },
 ];
 
 export const principles = [

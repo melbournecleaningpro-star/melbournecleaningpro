@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, ArrowRight, ArrowUpRight, BedDouble, Blinds, Building2, ClipboardList, CookingPot, Grid3x3, Home, MapPin, Sparkles, Store, type LucideIcon } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, BedDouble, Blinds, Building2, ClipboardList, CookingPot, Droplets, Grid3x3, Home, MapPin, Sparkles, Store, type LucideIcon } from "lucide-react";
 import {
   choiceFactors,
   commercialKeys,
@@ -131,7 +131,7 @@ export function CategoryNav() {
 }
 
 /** Icons for services shown without an image. */
-const rowIcons: Partial<Record<ServiceKey, LucideIcon>> = { house: Home, oven: CookingPot, mattress: BedDouble, tile: Grid3x3, blinds: Blinds };
+const rowIcons: Partial<Record<ServiceKey, LucideIcon>> = { house: Home, oven: CookingPot, mattress: BedDouble, tile: Grid3x3, blinds: Blinds, pressure: Droplets };
 
 function ServiceRow({ k }: { k: ServiceKey }) {
   const RowIcon = rowIcons[k] ?? Sparkles;

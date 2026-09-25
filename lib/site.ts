@@ -67,6 +67,7 @@ const LIVE_ROUTES = new Set<string>([
   "/quote/",
   "/faq/",
   "/terms-and-conditions/",
+  "/service-areas/",
   "/services/end-of-lease-cleaning/",
   "/services/commercial-cleaning/",
   "/services/deep-cleaning/",
@@ -110,7 +111,7 @@ export const quoteMailHref = quoteMailto(
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: routeHref("/services/", "/#services") },
-  { label: "Areas We Serve", href: routeHref("/areas/", "/#areas") },
+  { label: "Areas We Serve", href: routeHref("/service-areas/", "/#areas") },
   { label: "About", href: routeHref("/about/", "/#why-us") },
   { label: "FAQ", href: routeHref("/faq/", "/#faq") },
   { label: "Contact", href: routeHref("/contact/", "#contact") },

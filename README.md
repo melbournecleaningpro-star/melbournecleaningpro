@@ -1,6 +1,6 @@
 # Melbourne Cleaning Pro: Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Terms & Conditions (`/terms-and-conditions/`), Quote (`/quote/`), FAQ (`/faq/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
+Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Terms & Conditions (`/terms-and-conditions/`), Quote (`/quote/`), FAQ (`/faq/`), Service Areas (`/service-areas/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
 
 ## Scripts
 
@@ -83,3 +83,9 @@ can pre-select a service with `/quote/?service=<id>`.
 are confirmed by agreement, the website takes no payments, and no cancellation, fee, deposit or refund
 policy is set, so those sections say terms are agreed per service. When you set real policies (and your
 legal entity / ABN), update those sections and `LAST_UPDATED`. Have the page reviewed before launch.
+
+## Service areas
+
+`/service-areas/` is one hand-written page. Its regions and suburbs come from what the business already
+states (`serviceAreas` in `lib/content.ts`), shown as examples rather than boundaries. There are no
+location routes; add any future suburb page manually.

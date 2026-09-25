@@ -16,7 +16,7 @@ export function ServiceAreasPreview() {
             intro="Our Melbourne cleaners look after homes and businesses from the CBD out to the surrounding suburbs, including the inner city, the north and west, and the eastern and south-eastern suburbs. Not sure if we cover your area? Just ask when you request a quote."
           />
           <a
-            href={routeHref("/areas/", "#contact")}
+            href={routeHref("/service-areas/", "#contact")}
             className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brand transition-colors hover:text-brand-dark"
           >
             View All Service Areas

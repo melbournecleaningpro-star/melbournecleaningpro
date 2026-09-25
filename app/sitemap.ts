@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/terms-and-conditions/`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${siteConfig.url}/quote/`, changeFrequency: "yearly", priority: 0.7 },
     { url: `${siteConfig.url}/faq/`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${siteConfig.url}/service-areas/`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteConfig.url}/services/end-of-lease-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/commercial-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/services/deep-cleaning/`, changeFrequency: "monthly", priority: 0.9 },

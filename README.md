@@ -1,6 +1,6 @@
 # Melbourne Cleaning Pro: Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Quote (`/quote/`), FAQ (`/faq/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
+Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Terms & Conditions (`/terms-and-conditions/`), Quote (`/quote/`), FAQ (`/faq/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
 
 ## Scripts
 
@@ -76,3 +76,10 @@ to a hosted form service instead, set `NEXT_PUBLIC_QUOTE_ENDPOINT` at build
 time (see `lib/quote.ts`); the page then shows a real "sent" or "couldn't send"
 result from that service. Update the privacy policy if you do. Service pages
 can pre-select a service with `/quote/?service=<id>`.
+
+## Terms & Conditions
+
+`/terms-and-conditions/` (`components/terms/Terms.tsx`) reflects how the business works today: requests
+are confirmed by agreement, the website takes no payments, and no cancellation, fee, deposit or refund
+policy is set, so those sections say terms are agreed per service. When you set real policies (and your
+legal entity / ABN), update those sections and `LAST_UPDATED`. Have the page reviewed before launch.

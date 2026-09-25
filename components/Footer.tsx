@@ -125,6 +125,11 @@ export function Footer() {
                 Privacy Policy
               </a>
             )}
+            {isLiveRoute("/terms-and-conditions/") && (
+              <a href="/terms-and-conditions/" className="underline-offset-4 transition-colors hover:text-white hover:underline">
+                Terms &amp; Conditions
+              </a>
+            )}
             <span>Cleaning services in Melbourne, Victoria.</span>
           </p>
         </Container>

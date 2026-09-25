@@ -68,6 +68,7 @@ const LIVE_ROUTES = new Set<string>([
   "/faq/",
   "/terms-and-conditions/",
   "/service-areas/",
+  "/services/house-cleaning/",
   "/services/end-of-lease-cleaning/",
   "/services/commercial-cleaning/",
   "/services/deep-cleaning/",

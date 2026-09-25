@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6dc" stop-opacity=".9"/><stop offset="1" stop-color="#fff6dc" stop-opacity="0"/></linearGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6ee"/><stop offset="1" stop-color="#eaf5f2"/></linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="#f7f1e6"/>
+  <!-- tall window + sheer curtain -->
+  <rect x="60" y="40" width="170" height="300" rx="4" fill="url(#win)"/>
+  <path d="M145 40v300M60 190h170" stroke="#fff" stroke-width="6"/>
+  <path d="M40 30h210" stroke="#10272f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M44 32c10 110 4 220 10 312h26c-8-100-2-200-10-312Z" fill="#fff" opacity=".75"/>
+  <!-- sunlight on floor -->
+  <path d="M60 340h170l170 140H150Z" fill="url(#sun)"/>
+  <!-- floor -->
+  <rect y="340" width="640" height="140" fill="#e2cba5"/>
+  <path d="M-20 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M80 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M120 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M220 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M260 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M360 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M400 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M500 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M540 340v140" stroke="#d4b98f" stroke-width="1.5"/><path d="M640 340v140" stroke="#d4b98f" stroke-width="1.5"/>
+  <rect y="336" width="640" height="6" fill="#fff"/>
+  <!-- rug -->
+  <ellipse cx="330" cy="420" rx="200" ry="34" fill="#0b6e69" opacity=".16"/>
+  <!-- light grey sofa -->
+  <rect x="250" y="250" width="250" height="70" rx="18" fill="#c9d3d1"/>
+  <rect x="236" y="290" width="278" height="52" rx="16" fill="#b8c4c2"/>
+  <rect x="262" y="262" width="60" height="44" rx="12" fill="#f4b63f"/>
+  <rect x="428" y="262" width="56" height="42" rx="12" fill="#f2b8c6"/>
+  <g fill="#6f5439"><rect x="252" y="340" width="8" height="12"/><rect x="490" y="340" width="8" height="12"/></g>
+  <!-- coffee table + plant + books -->
+  <rect x="300" y="372" width="150" height="10" rx="4" fill="#8a6a4a"/>
+  <g fill="#6f5439"><rect x="310" y="382" width="6" height="26"/><rect x="434" y="382" width="6" height="26"/></g>
+  <rect x="320" y="360" width="40" height="12" rx="2" fill="#0b6e69"/><rect x="326" y="352" width="34" height="8" rx="2" fill="#f4b63f"/>
+  <path d="M414 372c-10-30-4-48 8-60 10 18 8 40-8 60Z" fill="#3e8e6a"/><rect x="404" y="360" width="22" height="12" rx="3" fill="#fff"/>
+  <!-- shelf with objects -->
+  <rect x="540" y="120" width="80" height="6" rx="2" fill="#8a6a4a"/><rect x="540" y="190" width="80" height="6" rx="2" fill="#8a6a4a"/>
+  <rect x="548" y="96" width="12" height="24" fill="#0b6e69"/><rect x="562" y="100" width="10" height="20" fill="#f4b63f"/><circle cx="600" cy="108" r="12" fill="#f2b8c6"/>
+  <rect x="552" y="166" width="30" height="24" rx="4" fill="#fff"/><path d="M600 190c-4-18 0-30 8-38 6 14 4 28-8 38Z" fill="#3e8e6a"/>
+  <!-- floor lamp -->
+  <path d="M540 352V210" stroke="#10272f" stroke-width="4"/><path d="M516 210h48l-10-34h-28Z" fill="#fbe3a6"/><ellipse cx="540" cy="354" rx="18" ry="4" fill="#10272f"/>
+  <!-- wall art -->
+  <rect x="300" y="110" width="90" height="100" rx="3" fill="#fff"/><rect x="308" y="118" width="74" height="84" fill="#dbeee9"/><path d="M308 180l24-26 20 18 14-12 16 20v22h-74Z" fill="#8fc49a"/>
+</svg>

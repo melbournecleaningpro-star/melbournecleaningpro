@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#f7f1e6"/>
+  <!-- floor -->
+  <rect y="360" width="800" height="120" fill="#e2cba5"/>
+  <path d="M-20 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M80 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M120 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M220 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M260 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M360 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M400 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M500 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M540 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M640 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M680 360v120" stroke="#d4b98f" stroke-width="1.5"/><path d="M780 360v120" stroke="#d4b98f" stroke-width="1.5"/>
+  <rect y="356" width="800" height="6" fill="#fff"/>
+  <!-- ENTRY: front door + mat + shoes + hooks -->
+  <rect x="30" y="120" width="110" height="240" fill="#fff"/>
+  <rect x="42" y="132" width="86" height="228" fill="#0b6e69"/>
+  <rect x="58" y="150" width="54" height="60" rx="4" fill="#cfe6ee"/>
+  <circle cx="118" cy="262" r="5" fill="#f4b63f"/>
+  <rect x="40" y="366" width="96" height="12" rx="3" fill="#8a6a4a"/>
+  <path d="M150 372h26l4-8h-22ZM182 376h26l4-8h-22Z" fill="#10272f"/>
+  <g fill="#10272f"><circle cx="170" cy="160" r="3"/><circle cx="190" cy="160" r="3"/></g>
+  <path d="M170 160v40M190 160v30" stroke="#f4b63f" stroke-width="10" stroke-linecap="round"/>
+  <!-- light switch -->
+  <rect x="160" y="230" width="14" height="20" rx="2" fill="#fff" stroke="#d9d0c1"/>
+  <!-- KITCHEN: cabinets, benchtop, sink, tap, cooktop, fridge, pendant -->
+  <rect x="240" y="170" width="250" height="60" rx="4" fill="#fff"/>
+  <path d="M323 170v60M406 170v60" stroke="#e8e0d2" stroke-width="2"/>
+  <rect x="240" y="250" width="250" height="14" rx="3" fill="#d9dfdd"/>
+  <rect x="244" y="264" width="242" height="96" fill="#0e7f79"/>
+  <path d="M325 264v96M405 264v96" stroke="#0b6e69" stroke-width="3"/>
+  <g fill="#f4b63f"><rect x="300" y="300" width="16" height="4" rx="2"/><rect x="334" y="300" width="16" height="4" rx="2"/><rect x="414" y="300" width="16" height="4" rx="2"/></g>
+  <rect x="270" y="246" width="44" height="8" rx="3" fill="#b8c4c2"/><path d="M292 246v-18h10" stroke="#8a9795" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g fill="#10272f"><circle cx="420" cy="252" r="7"/><circle cx="444" cy="252" r="7"/></g>
+  <rect x="500" y="130" width="70" height="230" rx="6" fill="#dfe6e4"/><path d="M500 220h70" stroke="#c9d3d1" stroke-width="2"/>
+  <rect x="556" y="160" width="5" height="40" rx="2" fill="#8a9795"/><rect x="556" y="236" width="5" height="50" rx="2" fill="#8a9795"/>
+  <path d="M365 40v70" stroke="#10272f" stroke-width="2"/><path d="M345 110h40l-8 20h-24Z" fill="#f4b63f"/>
+  <!-- BATHROOM doorway with basin + mirror -->
+  <rect x="600" y="140" width="90" height="220" fill="#fff"/>
+  <rect x="610" y="150" width="70" height="210" fill="#e8f3f5"/>
+  <rect x="624" y="170" width="42" height="50" rx="20" fill="#cfe6ee" stroke="#fff" stroke-width="3"/>
+  <path d="M618 262h54l-6 18h-42Z" fill="#fff"/><rect x="638" y="280" width="14" height="80" fill="#fff"/>
+  <!-- LIVING: armchair + side table -->
+  <rect x="712" y="280" width="80" height="58" rx="14" fill="#c9d3d1"/><rect x="706" y="310" width="94" height="44" rx="12" fill="#b8c4c2"/>
+  <rect x="728" y="290" width="36" height="28" rx="8" fill="#f2b8c6"/>
+  <g fill="#6f5439"><rect x="712" y="352" width="6" height="10"/><rect x="786" y="352" width="6" height="10"/></g>
+  <!-- rug in living -->
+  <ellipse cx="740" cy="420" rx="90" ry="20" fill="#0b6e69" opacity=".16"/>
+</svg>

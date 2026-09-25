@@ -44,7 +44,7 @@ export type ServiceOption = {
 
 /** Services actually offered, each with its own page (house cleaning excepted). */
 export const serviceOptions: ServiceOption[] = [
-  { id: "house", name: "House Cleaning", line: "Regular or one-off cleaning for your home.", frequency: "full", areas: "home" },
+  { id: "house", name: "House Cleaning", line: "Regular or one-off cleaning for your home.", path: "/services/house-cleaning/", frequency: "full", areas: "home" },
   { id: "end-of-lease", name: "End of Lease Cleaning", line: "Preparing a rental for handover.", path: "/services/end-of-lease-cleaning/", frequency: "none", areas: "home" },
   { id: "deep", name: "Deep Cleaning", line: "A more detailed clean where it's needed.", path: "/services/deep-cleaning/", frequency: "none", areas: "home" },
   { id: "move-in", name: "Move-In Cleaning", line: "A clean home before you unpack.", path: "/services/move-in-cleaning/", frequency: "none", areas: "home" },

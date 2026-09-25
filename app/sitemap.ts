@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${siteConfig.url}/`, changeFrequency: "monthly", priority: 1 },
     { url: `${siteConfig.url}/services/`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteConfig.url}/services/house-cleaning/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteConfig.url}/about/`, changeFrequency: "yearly", priority: 0.6 },
     { url: `${siteConfig.url}/contact/`, changeFrequency: "yearly", priority: 0.6 },
     { url: `${siteConfig.url}/privacy-policy/`, changeFrequency: "yearly", priority: 0.3 },

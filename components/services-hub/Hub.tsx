@@ -221,7 +221,7 @@ export function ResidentialDirectory() {
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">{intro}</p>
               </div>
               {layout === "tiles" ? (
-                <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                   {keys.map((k) => (
                     <ServiceTile key={k} k={k} />
                   ))}

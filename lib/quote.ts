@@ -27,6 +27,7 @@ export type ServiceId =
   | "spring"
   | "window"
   | "carpet"
+  | "upholstery"
   | "not-sure";
 
 type Frequency = "full" | "occasional" | "none";
@@ -41,7 +42,7 @@ export type ServiceOption = {
   areas: "home" | "work" | "none";
 };
 
-/** Services actually offered. Upholstery has no page, so it isn't listed. */
+/** Services actually offered, each with its own page (house cleaning excepted). */
 export const serviceOptions: ServiceOption[] = [
   { id: "house", name: "House Cleaning", line: "Regular or one-off cleaning for your home.", frequency: "full", areas: "home" },
   { id: "end-of-lease", name: "End of Lease Cleaning", line: "Preparing a rental for handover.", path: "/services/end-of-lease-cleaning/", frequency: "none", areas: "home" },
@@ -52,6 +53,7 @@ export const serviceOptions: ServiceOption[] = [
   { id: "post-construction", name: "Post-Construction Cleaning", line: "Dust and residue after building work.", path: "/services/post-construction-cleaning/", frequency: "none", areas: "home" },
   { id: "window", name: "Window Cleaning", line: "Accessible glass, frames and sills.", path: "/services/window-cleaning/", frequency: "occasional", areas: "none" },
   { id: "carpet", name: "Carpet Cleaning", line: "Refreshing carpeted rooms and walkways.", path: "/services/carpet-cleaning/", frequency: "occasional", areas: "none" },
+  { id: "upholstery", name: "Upholstery Cleaning", line: "Sofas, armchairs and fabric furniture.", path: "/services/upholstery-cleaning/", frequency: "occasional", areas: "none" },
   { id: "office", name: "Office Cleaning", line: "Scheduled cleaning for workplaces.", path: "/services/office-cleaning/", frequency: "full", areas: "work" },
   { id: "commercial", name: "Commercial Cleaning", line: "Shops, studios and business premises.", path: "/services/commercial-cleaning/", frequency: "full", areas: "work" },
   { id: "not-sure", name: "Not Sure", line: "Describe the job and we'll suggest a service.", frequency: "full", areas: "home" },
@@ -82,6 +84,7 @@ export const serviceQuestions: Partial<Record<ServiceId, { question: string; opt
   airbnb: { question: "Is this cleaning between guest stays?", options: ["Yes", "No", "Not sure"] },
   window: { question: "Are the windows easily accessible?", options: ["Yes, easy to reach", "Some are hard to reach", "Not sure"] },
   carpet: { question: "Approximately how many rooms have carpet?", options: ["1", "2", "3", "4", "5+", "Not sure"] },
+  upholstery: { question: "What type of furniture would you like cleaned?", options: ["Sofa / couch", "Armchairs", "Dining chairs", "Ottoman", "A mix of pieces", "Not sure"] },
 };
 
 export const steps = ["Service", "Property", "Cleaning Details", "Your Details", "Review"];

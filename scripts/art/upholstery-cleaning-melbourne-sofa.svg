@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <pattern id="fab" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#d8c7a9"/><path d="M0 1.5h6M0 4.5h6" stroke="#cdbb9b" stroke-width="1"/><path d="M1.5 0v6M4.5 0v6" stroke="#e2d4bb" stroke-width=".8"/></pattern>
+    <pattern id="fab2" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#cfbd9d"/><path d="M0 1.5h6M0 4.5h6" stroke="#c3b08e" stroke-width="1"/><path d="M1.5 0v6M4.5 0v6" stroke="#dac9ad" stroke-width=".8"/></pattern>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#10272f" stop-opacity=".12"/></linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="#eef2ef"/>
+  <!-- window light + art -->
+  <rect x="400" y="40" width="150" height="110" rx="4" fill="#cfe6ee"/><path d="M475 40v110M400 95h150" stroke="#fff" stroke-width="5"/>
+  <rect x="120" y="60" width="120" height="80" rx="3" fill="#fff"/><rect x="130" y="70" width="100" height="60" fill="#f4b63f" opacity=".75"/><circle cx="200" cy="92" r="14" fill="#0b6e69" opacity=".8"/>
+  <!-- floor + rug -->
+  <rect y="372" width="640" height="108" fill="#d9c6a6"/>
+  <path d="M0 372h640" stroke="#c9b38f" stroke-width="3"/>
+  <ellipse cx="320" cy="430" rx="250" ry="34" fill="#0b6e69" opacity=".18"/>
+  <!-- sofa: back cushions -->
+  <g>
+    <rect x="112" y="168" width="140" height="112" rx="22" fill="url(#fab2)"/>
+    <rect x="250" y="168" width="140" height="112" rx="22" fill="url(#fab2)"/>
+    <rect x="388" y="168" width="140" height="112" rx="22" fill="url(#fab2)"/>
+    <!-- seat base -->
+    <rect x="96" y="300" width="448" height="62" rx="14" fill="url(#fab)"/>
+    <!-- seat cushions -->
+    <rect x="112" y="266" width="140" height="48" rx="14" fill="url(#fab)"/>
+    <rect x="250" y="266" width="140" height="48" rx="14" fill="url(#fab)"/>
+    <rect x="388" y="266" width="140" height="48" rx="14" fill="url(#fab)"/>
+    <!-- arms -->
+    <rect x="66" y="228" width="62" height="134" rx="26" fill="url(#fab)"/>
+    <rect x="512" y="228" width="62" height="134" rx="26" fill="url(#fab)"/>
+    <!-- seams -->
+    <g stroke="#b9a582" stroke-width="1.6" stroke-dasharray="3 4" fill="none">
+      <rect x="120" y="176" width="124" height="96" rx="16"/><rect x="258" y="176" width="124" height="96" rx="16"/><rect x="396" y="176" width="124" height="96" rx="16"/>
+      <path d="M120 290h124M258 290h124M396 290h124"/>
+    </g>
+    <!-- legs -->
+    <g fill="#6f5439"><rect x="110" y="360" width="10" height="18" rx="2"/><rect x="520" y="360" width="10" height="18" rx="2"/></g>
+    <!-- throw pillows -->
+    <rect x="132" y="214" width="70" height="62" rx="16" fill="#f4b63f" transform="rotate(-8 167 245)"/>
+    <rect x="446" y="216" width="66" height="58" rx="16" fill="#0e7f79" transform="rotate(7 479 245)"/>
+  </g>
+  <!-- side table + lamp -->
+  <rect x="584" y="300" width="44" height="8" rx="2" fill="#8a6a4a"/><rect x="600" y="308" width="10" height="68" fill="#6f5439"/>
+  <path d="M590 300l14-52h8l14 52Z" fill="#fbe3a6"/>
+  <!-- plant -->
+  <path d="M34 372c-10-60-2-110 20-150 18 50 12 100-20 150Z" fill="#3e8e6a"/><path d="M20 372h40l-5 30H25Z" fill="#fff" transform="translate(0 -30)"/>
+</svg>

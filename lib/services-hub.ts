@@ -80,6 +80,13 @@ export const services = {
     description: "Professional cleaning for suitable carpeted areas.",
     image: img("carpet-cleaning-melbourne-living.webp", "Carpeted living room with fresh vacuum lines"),
   }),
+  upholstery: service({
+    id: "upholstery",
+    name: "Upholstery Cleaning",
+    path: "/services/upholstery-cleaning/",
+    description: "Cleaning for sofas, armchairs and other suitable fabric furniture.",
+    image: img("upholstery-cleaning-melbourne-sofa.webp", "Fabric sofa with cushions in a bright living room"),
+  }),
   commercial: service({
     id: "commercial",
     name: "Commercial Cleaning",
@@ -121,7 +128,7 @@ export const residentialGroups: { title: string; intro: string; keys: ServiceKey
   {
     title: "Specific surfaces",
     intro: "Focused cleaning for one part of the property.",
-    keys: ["window", "carpet"],
+    keys: ["window", "carpet", "upholstery"],
     layout: "tiles",
   },
 ];
@@ -138,6 +145,7 @@ export const scenarios: { quote: string; key: ServiceKey }[] = [
   { quote: "My home needs a more detailed clean.", key: "deep" },
   { quote: "I manage a short-stay property.", key: "airbnb" },
   { quote: "My carpets need attention.", key: "carpet" },
+  { quote: "My furniture needs refreshing.", key: "upholstery" },
   { quote: "I need office cleaning.", key: "office" },
   { quote: "I need cleaning for a business.", key: "commercial" },
 ];
@@ -157,7 +165,7 @@ export const reasons: { reason: string; keys: ServiceKey[] }[] = [
   { reason: "End of lease", keys: ["endOfLease"] },
   { reason: "Seasonal refresh", keys: ["spring"] },
   { reason: "Short-stay turnover", keys: ["airbnb"] },
-  { reason: "Specialised area cleaning", keys: ["window", "carpet"] },
+  { reason: "Specialised area cleaning", keys: ["window", "carpet", "upholstery"] },
 ];
 
 export const suburbs = ["Melbourne CBD", "Richmond", "South Yarra", "Brunswick", "Footscray", "Preston", "Werribee", "Point Cook", "Doncaster", "Glen Waverley"];

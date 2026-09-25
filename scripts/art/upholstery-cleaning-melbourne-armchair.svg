@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <pattern id="fab" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#0e7f79"/><path d="M0 1.5h6M0 4.5h6" stroke="#0b6e69" stroke-width="1"/><path d="M1.5 0v6M4.5 0v6" stroke="#1a8a84" stroke-width=".8"/></pattern>
+    <pattern id="fab2" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#0b6e69"/><path d="M0 1.5h6M0 4.5h6" stroke="#08524e" stroke-width="1"/><path d="M1.5 0v6M4.5 0v6" stroke="#138079" stroke-width=".8"/></pattern>
+  </defs>
+  <rect width="640" height="480" fill="#f4efe6"/>
+  <rect y="370" width="640" height="110" fill="#e0d2b8"/>
+  <path d="M0 370h640" stroke="#cdbb9b" stroke-width="3"/>
+  <!-- floor lamp -->
+  <path d="M470 370V140" stroke="#10272f" stroke-width="5"/><path d="M430 140h80l-16-50h-48Z" fill="#fbe3a6"/><ellipse cx="470" cy="372" rx="28" ry="6" fill="#10272f"/>
+  <!-- armchair -->
+  <rect x="200" y="150" width="200" height="150" rx="40" fill="url(#fab2)"/>
+  <rect x="210" y="270" width="180" height="56" rx="18" fill="url(#fab)"/>
+  <rect x="164" y="220" width="64" height="130" rx="28" fill="url(#fab)"/>
+  <rect x="372" y="220" width="64" height="130" rx="28" fill="url(#fab)"/>
+  <rect x="190" y="320" width="220" height="30" rx="10" fill="url(#fab2)"/>
+  <g stroke="#08524e" stroke-width="1.6" stroke-dasharray="3 4" fill="none"><rect x="212" y="162" width="176" height="126" rx="30"/><path d="M220 298h160"/></g>
+  <g fill="#6f5439"><rect x="200" y="348" width="10" height="24" rx="2"/><rect x="390" y="348" width="10" height="24" rx="2"/></g>
+  <!-- cushion + folded throw -->
+  <rect x="250" y="200" width="100" height="74" rx="20" fill="#f4b63f"/>
+  <circle cx="300" cy="237" r="4" fill="#e0a126"/>
+  <path d="M388 250c20 10 30 40 22 90l-24 0c4-40 2-70 2-90Z" fill="#d8c7a9"/>
+  <!-- ottoman -->
+  <rect x="96" y="310" width="96" height="52" rx="20" fill="#d8c7a9"/><g fill="#6f5439"><rect x="106" y="360" width="8" height="12" rx="2"/><rect x="174" y="360" width="8" height="12" rx="2"/></g>
+  <!-- plant -->
+  <path d="M570 370c-8-60 0-100 18-130 14 44 10 90-18 130Z" fill="#3e8e6a"/><path d="M552 340h40l-6 32h-28Z" fill="#fff"/>
+</svg>

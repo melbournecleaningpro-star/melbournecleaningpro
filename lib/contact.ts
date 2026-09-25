@@ -11,7 +11,7 @@ export const PAGE_PATH = "/contact/";
  * server-side configuration, never in this file.
  */
 
-/** Services offered. Upholstery is intentionally absent: that service has no page. */
+/** Services offered. */
 export const serviceOptions = [
   "House Cleaning",
   "End of Lease Cleaning",
@@ -24,6 +24,7 @@ export const serviceOptions = [
   "Spring Cleaning",
   "Window Cleaning",
   "Carpet Cleaning",
+  "Upholstery Cleaning",
   "Other / Not Sure",
 ];
 

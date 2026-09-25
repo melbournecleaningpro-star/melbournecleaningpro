@@ -1,6 +1,6 @@
 # Melbourne Cleaning Pro: Website
 
-Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Terms & Conditions (`/terms-and-conditions/`), Quote (`/quote/`), FAQ (`/faq/`), Service Areas (`/service-areas/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) and Carpet Cleaning (`/services/carpet-cleaning/`).
+Next.js (App Router) + TypeScript + Tailwind CSS v4. Pages: homepage (`/`), Services hub (`/services/`), About (`/about/`), Contact (`/contact/`), Privacy Policy (`/privacy-policy/`), Terms & Conditions (`/terms-and-conditions/`), Quote (`/quote/`), FAQ (`/faq/`), Service Areas (`/service-areas/`), End of Lease Cleaning (`/services/end-of-lease-cleaning/`), Commercial Cleaning (`/services/commercial-cleaning/`), Deep Cleaning (`/services/deep-cleaning/`), Office Cleaning (`/services/office-cleaning/`), Airbnb Cleaning (`/services/airbnb-cleaning/`), Move-In Cleaning (`/services/move-in-cleaning/`), Post-Construction Cleaning (`/services/post-construction-cleaning/`), Spring Cleaning (`/services/spring-cleaning/`), Window Cleaning (`/services/window-cleaning/`) Carpet Cleaning (`/services/carpet-cleaning/`) and Upholstery Cleaning (`/services/upholstery-cleaning/`).
 
 ## Scripts
 
@@ -40,7 +40,7 @@ in `lib/site.ts` and to `app/sitemap.ts`, and every link to it updates automatic
 
 Page images live in `public/images` (e.g. `end-of-lease-cleaning-melbourne.webp`).
 Replace them with genuine job photos of the same filename. If the aspect ratio
-changes, update `width`/`height` in `lib/end-of-lease.ts` (`showcase`), `lib/commercial.ts`, `lib/deep-cleaning.ts`, `lib/office.ts`, `lib/airbnb.ts`, `lib/move-in.ts`, `lib/post-construction.ts`, `lib/spring-cleaning.ts`, `lib/window-cleaning.ts` or `lib/carpet-cleaning.ts` (`images`).
+changes, update `width`/`height` in `lib/end-of-lease.ts` (`showcase`), `lib/commercial.ts`, `lib/deep-cleaning.ts`, `lib/office.ts`, `lib/airbnb.ts`, `lib/move-in.ts`, `lib/post-construction.ts`, `lib/spring-cleaning.ts`, `lib/window-cleaning.ts`, `lib/carpet-cleaning.ts` or `lib/upholstery-cleaning.ts` (`images`).
 
 ## Search indexing (currently OFF, pre-launch)
 

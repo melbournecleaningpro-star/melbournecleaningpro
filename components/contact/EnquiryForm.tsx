@@ -1,8 +1,9 @@
 "use client";
 
 import { useRef, useState, type FormEvent, type ReactNode } from "react";
-import { AlertCircle, Check, ChevronDown, Copy, Mail, Send } from "lucide-react";
+import { AlertCircle, Check, ChevronDown, Copy, Loader2, Mail, Send } from "lucide-react";
 import { propertyTypes, serviceOptions } from "@/lib/contact";
+import { QUOTE_ENDPOINT } from "@/lib/quote";
 import { quoteMailto, siteConfig } from "@/lib/site";
 
 type Fields = {
@@ -63,15 +64,34 @@ function composeEnquiry(f: Fields) {
   return { subject, body };
 }
 
+type Sent = { subject: string; body: string; delivered: boolean };
+
 /**
- * Delivery method. There is no form backend (static export), so this opens the
- * visitor's email app with the enquiry pre-filled. Nothing is sent until they
- * press send there, and the success message says exactly that.
+ * Delivery method. Posts the enquiry to the site's Worker, which emails it to
+ * the business inbox. If that fails (or no endpoint is configured), it falls
+ * back to opening the visitor's email app with the enquiry pre-filled; nothing
+ * is sent until they press send there, and the message says exactly that.
  */
-function sendEnquiry(f: Fields) {
+async function sendEnquiry(f: Fields): Promise<Sent> {
   const { subject, body } = composeEnquiry(f);
+  if (QUOTE_ENDPOINT) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 15000);
+      const res = await fetch(QUOTE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ ...f, form: "contact", subject, body }),
+        signal: controller.signal,
+      });
+      clearTimeout(timer);
+      if (res.ok) return { subject, body, delivered: true };
+    } catch {
+      /* fall through to the email app */
+    }
+  }
   window.location.href = quoteMailto(subject, body);
-  return { subject, body };
+  return { subject, body, delivered: false };
 }
 
 const input =
@@ -117,7 +137,8 @@ export function EnquiryForm() {
   const [fields, setFields] = useState<Fields>(empty);
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
-  const [sent, setSent] = useState<{ subject: string; body: string } | null>(null);
+  const [sent, setSent] = useState<Sent | null>(null);
+  const [sending, setSending] = useState(false);
   const [copied, setCopied] = useState(false);
   const summaryRef = useRef<HTMLDivElement>(null);
   const successRef = useRef<HTMLDivElement>(null);
@@ -128,8 +149,9 @@ export function EnquiryForm() {
     if (submitted) setErrors(validate(next));
   };
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (sending) return;
     setSubmitted(true);
     const found = validate(fields);
     setErrors(found);
@@ -138,7 +160,9 @@ export function EnquiryForm() {
       summaryRef.current?.focus();
       return;
     }
-    setSent(sendEnquiry(fields));
+    setSending(true);
+    setSent(await sendEnquiry(fields));
+    setSending(false);
     requestAnimationFrame(() => successRef.current?.focus());
   };
 
@@ -154,6 +178,32 @@ export function EnquiryForm() {
 
   const errorList = Object.entries(errors) as [keyof Fields, string][];
   const described = (key: keyof Fields) => (errors[key] ? `${key}-error` : undefined);
+
+  if (sent?.delivered) {
+    return (
+      <div ref={successRef} tabIndex={-1} role="status" className="rounded-3xl bg-white p-6 shadow-lift ring-1 ring-line outline-none sm:p-10">
+        <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand text-white">
+          <Check className="h-6 w-6" strokeWidth={3} aria-hidden="true" />
+        </span>
+        <h3 className="mt-5 text-2xl font-semibold tracking-tight text-ink">Thanks, your enquiry has been sent</h3>
+        <p className="mt-3 text-base leading-relaxed text-ink-soft">
+          We&apos;ve received your details and will reply to{" "}
+          <strong className="font-semibold text-ink">{fields.email.trim()}</strong> with a clear quote.
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            setSent(null);
+            setFields(empty);
+            setSubmitted(false);
+          }}
+          className="mt-6 text-sm font-semibold text-brand underline underline-offset-4 hover:text-brand-dark"
+        >
+          Send another enquiry
+        </button>
+      </div>
+    );
+  }
 
   if (sent) {
     return (
@@ -307,15 +357,19 @@ export function EnquiryForm() {
       <div className="mt-8 border-t border-line pt-7">
         <button
           type="submit"
-          className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-4 text-base font-semibold text-white shadow-sm transition hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/30 sm:w-auto"
+          disabled={sending}
+          aria-busy={sending}
+          className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-4 text-base font-semibold text-white shadow-sm transition hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand/30 disabled:opacity-70 sm:w-auto"
         >
-          <Send className="h-4 w-4" aria-hidden="true" />
-          Request a Cleaning Quote
+          {sending ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <Send className="h-4 w-4" aria-hidden="true" />}
+          {sending ? "Sending your enquiry…" : "Request a Cleaning Quote"}
         </button>
-        <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-          This opens your email app with your enquiry filled in, addressed to {siteConfig.contact.email.display}.
-          Nothing is sent until you press send.
-        </p>
+        {!QUOTE_ENDPOINT && (
+          <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+            This opens your email app with your enquiry filled in, addressed to {siteConfig.contact.email.display}.
+            Nothing is sent until you press send.
+          </p>
+        )}
       </div>
     </form>
   );

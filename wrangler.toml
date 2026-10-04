@@ -1,11 +1,16 @@
-# Cloudflare Workers (static assets) config.
+# Cloudflare Workers config: static site + a small Worker for /api/*.
 # Build command:  npm run build        -> static export to ./out
-# Deploy command: npx wrangler deploy  -> uploads ./out as static assets
+# Deploy command: npx wrangler deploy  -> uploads ./out and worker/index.ts
 # `name` must match the Worker name in the Cloudflare dashboard.
+# Secrets (SMTP_*, LEAD_TO_EMAIL) live in Cloudflare: `wrangler secret put`.
 name = "melbournecleaningpro"
+main = "worker/index.ts"
 compatibility_date = "2026-09-01"
 
 [assets]
 directory = "./out"
+binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
+# Only /api/* reaches the Worker; pages and files are served straight from assets.
+run_worker_first = ["/api/*"]

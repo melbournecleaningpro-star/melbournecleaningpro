@@ -5,13 +5,14 @@ import { Breadcrumbs, type Crumb } from "../Breadcrumbs";
 import { Container } from "../ui";
 
 /**
- * Written from an audit of the codebase (September 2026): the enquiry form is
- * client-side only and opens the visitor's email app via mailto:, there are no
- * API routes, cookies, analytics, tag managers, storage or third-party scripts,
+ * Written from an audit of the codebase (October 2026): the enquiry and quote
+ * forms POST to the site's own Worker (/api/lead), which emails the details to
+ * our inbox (falling back to the visitor's email app via mailto:), there are no
+ * cookies, analytics, tag managers, storage or third-party scripts,
  * fonts are self-hosted at build time, and the site is hosted on Cloudflare
  * Workers. If any of that changes, update this policy and LAST_UPDATED.
  */
-export const LAST_UPDATED = { iso: "2026-09-25", display: "25 September 2026" };
+export const LAST_UPDATED = { iso: "2026-10-04", display: "4 October 2026" };
 
 const { name } = siteConfig;
 const email = siteConfig.contact.email;
@@ -101,10 +102,10 @@ const sections: Section[] = [
             <>
               <strong className="font-semibold text-ink">The enquiry and quote forms.</strong> The forms on our{" "}
               <a href="/contact/" className={a}>contact page</a> and <a href="/quote/" className={a}>quote page</a>{" "}
-              don&apos;t upload anything to the website. When you submit one, it opens your own email app with your details written into a new email addressed to us.
-              Nothing is sent until you press send, and the message travels through your email provider like any other
-              email you write. The optional &ldquo;copy&rdquo; button only copies the text to your device&apos;s
-              clipboard when you click it.
+              send the details you enter to our website, which passes them straight on to our email inbox. They
+              aren&apos;t stored on the website. If that can&apos;t be done, the form instead opens your own email app with
+              your details written into a new email addressed to us, and nothing is sent until you press send. The
+              optional &ldquo;copy&rdquo; button only copies the text to your device&apos;s clipboard when you click it.
             </>,
             <>
               <strong className="font-semibold text-ink">Email.</strong> When you email us directly, we receive the
@@ -169,8 +170,10 @@ const sections: Section[] = [
         </P>
         <H3>Email</H3>
         <P>
-          Enquiries arrive by email, so they&apos;re held in our email account with our email service provider, which
-          stores and delivers messages for us. Your own email provider also handles the message when you send it.
+          Enquiries arrive by email, so they&apos;re held in our email account with our email service provider
+          (Google Gmail), which stores and delivers messages for us. Form submissions are relayed to that inbox by our
+          website on Cloudflare, and messages sent to our domain address are forwarded by our email forwarding service
+          (ImprovMX). If you email us yourself, your own email provider also handles the message.
         </P>
         <P>The website doesn&apos;t use any other third-party service that receives your personal information.</P>
       </>

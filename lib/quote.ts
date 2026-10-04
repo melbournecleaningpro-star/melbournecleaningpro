@@ -1,19 +1,15 @@
 export const PAGE_PATH = "/quote/";
 
 /**
- * Where quote requests go.
+ * Where quote and enquiry requests go.
  *
- * The site is a static export with no backend. By default a request is handed
- * to the visitor's own email app (mailto:), and the confirmation says it's
- * ready to send, never that it has been sent.
- *
- * To post requests to a hosted form service instead, set
- * NEXT_PUBLIC_QUOTE_ENDPOINT at build time to that service's public submit URL
- * (it receives a JSON POST). Keep any secret keys with the provider, never
- * here: anything NEXT_PUBLIC_ is visible in the browser. If you do this, also
- * update the privacy policy (components/privacy/Policy.tsx).
+ * Requests are POSTed as JSON to the site's own Worker (worker/index.ts), which
+ * emails them to the business inbox. SMTP credentials stay in Cloudflare
+ * secrets, never here: anything NEXT_PUBLIC_ is visible in the browser.
+ * NEXT_PUBLIC_QUOTE_ENDPOINT can point somewhere else; set it to an empty
+ * string to fall back to opening the visitor's email app (mailto:).
  */
-export const QUOTE_ENDPOINT = process.env.NEXT_PUBLIC_QUOTE_ENDPOINT ?? "";
+export const QUOTE_ENDPOINT = process.env.NEXT_PUBLIC_QUOTE_ENDPOINT ?? "/api/lead";
 
 export type ServiceId =
   | "house"

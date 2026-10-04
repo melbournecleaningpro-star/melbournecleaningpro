@@ -4,7 +4,7 @@ export const PAGE_PATH = "/quote/";
  * Where quote and enquiry requests go.
  *
  * Requests are POSTed as JSON to the site's own Worker (worker/index.ts), which
- * emails them to the business inbox. SMTP credentials stay in Cloudflare
+ * emails them to the business inbox via Resend. API keys stay in Cloudflare
  * secrets, never here: anything NEXT_PUBLIC_ is visible in the browser.
  * NEXT_PUBLIC_QUOTE_ENDPOINT can point somewhere else; set it to an empty
  * string to fall back to opening the visitor's email app (mailto:).

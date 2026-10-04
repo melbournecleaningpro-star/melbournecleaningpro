@@ -1,4 +1,4 @@
-# Cloudflare Workers config: static site + a small Worker for /api/*.
+# Cloudflare Workers config: static site + a small Worker for /api/* and www.
 # Build command:  npm run build        -> static export to ./out
 # Deploy command: npx wrangler deploy  -> uploads ./out and worker/index.ts
 # `name` must match the Worker name in the Cloudflare dashboard.
@@ -7,10 +7,17 @@ name = "melbournecleaningpro"
 main = "worker/index.ts"
 compatibility_date = "2026-09-01"
 
+# Both hostnames are Worker Custom Domains; the Worker 301s www to the apex.
+routes = [
+  { pattern = "melbournecleaningpro.com", custom_domain = true },
+  { pattern = "www.melbournecleaningpro.com", custom_domain = true },
+]
+
 [assets]
 directory = "./out"
 binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
-# Only /api/* reaches the Worker; pages and files are served straight from assets.
-run_worker_first = ["/api/*"]
+# Every request reaches the Worker first so www can be redirected; it hands
+# everything else straight to the static assets.
+run_worker_first = true

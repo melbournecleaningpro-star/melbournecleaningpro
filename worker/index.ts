@@ -5,7 +5,8 @@
  * domain inbox, forwarded to Gmail by ImprovMX) through the Resend HTTPS API,
  * with Reply-To set to the customer so a reply goes straight back to them.
  * Workers can't open SMTP connections to Gmail, so sending goes over HTTPS.
- * Every other request is served from the static export in ./out.
+ * Requests to www.* are 301-redirected to the apex; every other request is
+ * served from the static export in ./out.
  *
  * Secrets (wrangler secret put / .env.local for `wrangler dev`):
  *   RESEND_API_KEY, LEAD_TO_EMAIL
@@ -27,6 +28,11 @@ const MAX_BODY = 10_000;
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+    if (url.hostname.startsWith("www.")) {
+      url.hostname = url.hostname.slice(4);
+      url.protocol = "https:";
+      return Response.redirect(url.toString(), 301);
+    }
     if (url.pathname === "/api/lead" || url.pathname === "/api/lead/") return handleLead(request, env, url);
     return env.ASSETS.fetch(request);
   },

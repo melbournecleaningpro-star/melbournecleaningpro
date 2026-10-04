@@ -187,8 +187,9 @@ export function EnquiryForm() {
         </span>
         <h3 className="mt-5 text-2xl font-semibold tracking-tight text-ink">Thanks, your enquiry has been sent</h3>
         <p className="mt-3 text-base leading-relaxed text-ink-soft">
-          We&apos;ve received your details and will reply to{" "}
-          <strong className="font-semibold text-ink">{fields.email.trim()}</strong> with a clear quote.
+          We&apos;ve received your details and sent a confirmation to{" "}
+          <strong className="font-semibold text-ink">{fields.email.trim()}</strong>. We&apos;ll reply there with a clear
+          quote. If you can&apos;t see it, check your spam folder.
         </p>
         <button
           type="button"

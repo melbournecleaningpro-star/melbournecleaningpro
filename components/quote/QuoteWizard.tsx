@@ -421,8 +421,9 @@ export function QuoteWizard() {
               <>
                 <h2 className="mt-5 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">Your Quote Request Has Been Sent</h2>
                 <p className="mt-3 text-base leading-relaxed text-ink-soft">
-                  Thanks, {data.name.trim().split(" ")[0]}. Your request has been received, and {siteConfig.name} can now
-                  review the details you provided to work out the next step.
+                  Thanks, {data.name.trim().split(" ")[0]}. Your request has been received, and we&apos;ve sent a
+                  confirmation to <strong className="font-semibold text-ink">{data.email.trim()}</strong>. We&apos;ll reply
+                  there with a clear quote. If you can&apos;t see it, check your spam folder.
                 </p>
               </>
             ) : (

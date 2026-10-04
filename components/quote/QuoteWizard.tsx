@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from "react";
 import { AlertCircle, ArrowLeft, ArrowRight, Check, Copy, Loader2, Mail, Pencil, Send } from "lucide-react";
 import {
   areaOptions,
@@ -263,6 +263,7 @@ export function QuoteWizard() {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const resultRef = useRef<HTMLDivElement>(null);
   const firstRender = useRef(true);
+  const autoAdvance = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   const service = serviceById(data.service);
   const question = data.service ? serviceQuestions[data.service] : undefined;
@@ -319,6 +320,17 @@ export function QuoteWizard() {
     setStep(target);
     setReached((r) => Math.max(r, target));
   };
+
+  // Picking a service with a pointer (mouse or tap) moves straight on to step 2,
+  // after a short pause so the selection is visible. Keyboard users keep the
+  // Next button, since arrow keys change the radio choice too.
+  const pickService = (e: MouseEvent) => {
+    if (e.detail === 0) return;
+    clearTimeout(autoAdvance.current);
+    autoAdvance.current = setTimeout(() => goTo(1), 250);
+  };
+
+  useEffect(() => () => clearTimeout(autoAdvance.current), []);
 
   const next = () => {
     const errs = validateStep(step, data);
@@ -492,6 +504,7 @@ export function QuoteWizard() {
           {serviceOptions.map((s, i) => (
             <label
               key={s.id}
+              onClick={pickService}
               className="group relative flex cursor-pointer gap-3 rounded-2xl border border-ink/15 bg-white p-4 transition hover:border-brand has-[:checked]:border-2 has-[:checked]:border-brand has-[:checked]:bg-brand-50 has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-brand/25"
             >
               <input

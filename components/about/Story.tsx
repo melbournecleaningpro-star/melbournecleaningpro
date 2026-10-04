@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Mail, Phone } from "lucide-react";
 import { audiences, expectations, images, journey, needs, principles, specialist, suburbs, values } from "@/lib/about";
-import { isLiveRoute, quoteHref, quoteMailHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, quoteMailHref, siteConfig, showPhone } from "@/lib/site";
 import { Breadcrumbs, type Crumb } from "../Breadcrumbs";
 import { ButtonLink, Container } from "../ui";
 
@@ -427,9 +427,11 @@ export function AboutCTA() {
             <a href={email.href} className="inline-flex items-center gap-2 hover:text-brand">
               <Mail className="h-4 w-4 text-brand" aria-hidden="true" /> {email.display}
             </a>
-            <a href={phone.href} className="inline-flex items-center gap-2 hover:text-brand">
-              <Phone className="h-4 w-4 text-brand" aria-hidden="true" /> {phone.display}
-            </a>
+            {showPhone && (
+              <a href={phone.href} className="inline-flex items-center gap-2 hover:text-brand">
+                <Phone className="h-4 w-4 text-brand" aria-hidden="true" /> {phone.display}
+              </a>
+            )}
           </div>
         </div>
       </Container>

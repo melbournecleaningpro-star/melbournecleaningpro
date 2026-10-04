@@ -191,6 +191,6 @@ export const airbnbFaqs: Faq[] = [
   {
     question: "How do I request an Airbnb cleaning quote?",
     answer:
-      "Email or call us with your property type, suburb, number of bedrooms and bathrooms, and your typical booking pattern. We'll come back with a clear quote.",
+      "Email us with your property type, suburb, number of bedrooms and bathrooms, and your typical booking pattern. We'll come back with a clear quote.",
   },
 ];

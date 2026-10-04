@@ -296,7 +296,7 @@ export const commercialFaqs: Faq[] = [
   {
     question: "How do I request a commercial cleaning quote?",
     answer:
-      "Email or call us with your business type, suburb, approximate property size, preferred cleaning frequency and preferred cleaning time. We'll review your requirements and come back with a clear quote.",
+      "Email us with your business type, suburb, approximate property size, preferred cleaning frequency and preferred cleaning time. We'll review your requirements and come back with a clear quote.",
   },
 ];
 

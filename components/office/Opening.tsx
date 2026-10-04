@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Phone } from "lucide-react";
 import { images, workday } from "@/lib/office";
-import { quoteHref, siteConfig } from "@/lib/site";
+import { quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { Breadcrumbs, type Crumb } from "../Breadcrumbs";
 import { ButtonLink, Container } from "../ui";
 
@@ -29,10 +29,12 @@ export function OfficeHero({ breadcrumbs }: { breadcrumbs: Crumb[] }) {
             <ButtonLink href={quoteHref} size="lg">
               Request an Office Cleaning Quote
             </ButtonLink>
-            <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              Call Us
-            </ButtonLink>
+            {showPhone && (
+              <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                Call Us
+              </ButtonLink>
+            )}
           </div>
         </div>
 

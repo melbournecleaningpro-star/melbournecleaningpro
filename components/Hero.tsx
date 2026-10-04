@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Check, Phone } from "lucide-react";
-import { quoteHref, siteConfig } from "@/lib/site";
+import { quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "./ui";
 
 const highlights = [
@@ -34,10 +34,12 @@ export function Hero() {
             <ButtonLink href={quoteHref} size="lg">
               Get a Free Quote
             </ButtonLink>
-            <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              Call Now
-            </ButtonLink>
+            {showPhone && (
+              <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                Call Now
+              </ButtonLink>
+            )}
           </div>
 
           <ul className="mt-8 flex flex-col gap-2.5 text-sm text-ink-soft sm:flex-row sm:flex-wrap sm:gap-x-6">

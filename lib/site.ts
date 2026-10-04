@@ -26,7 +26,7 @@ export const siteConfig = {
     email: {
       display: "hello@melbournecleaningpro.com",
       href: "mailto:hello@melbournecleaningpro.com",
-      isPlaceholder: true,
+      isPlaceholder: false,
     },
   },
   // Leave `href` empty until real profiles exist; empty entries render as
@@ -37,6 +37,12 @@ export const siteConfig = {
     { label: "LinkedIn", href: "" },
   ],
 } as const;
+
+/**
+ * Phone links and "Call" buttons only render once a real number replaces the
+ * placeholder above. Until then the site takes enquiries by email only.
+ */
+export const showPhone = !siteConfig.contact.phone.isPlaceholder;
 
 /**
  * Search-engine indexing switch. The site is pre-launch, so every page is

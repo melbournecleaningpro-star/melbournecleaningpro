@@ -1,5 +1,5 @@
 import { Mail, Phone } from "lucide-react";
-import { quoteMailHref, siteConfig } from "@/lib/site";
+import { quoteMailHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "./ui";
 
 const checklist = ["The type of clean you need", "Your suburb", "Property size", "Your preferred date"];
@@ -32,10 +32,12 @@ export function QuoteCTA() {
                   <Mail className="h-4 w-4" aria-hidden="true" />
                   Get a Free Quote
                 </ButtonLink>
-                <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
-                  <Phone className="h-4 w-4" aria-hidden="true" />
-                  Call Us
-                </ButtonLink>
+                {showPhone && (
+                  <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
+                    <Phone className="h-4 w-4" aria-hidden="true" />
+                    Call Us
+                  </ButtonLink>
+                )}
               </div>
             </div>
 

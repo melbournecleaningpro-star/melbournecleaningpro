@@ -178,6 +178,6 @@ export const moveInFaqs: Faq[] = [
   {
     question: "How do I request a move-in cleaning quote?",
     answer:
-      "Email or call us with the property type, suburb, number of bedrooms and bathrooms, whether it's empty, and your preferred date before moving in. We'll come back with a clear quote.",
+      "Email us with the property type, suburb, number of bedrooms and bathrooms, whether it's empty, and your preferred date before moving in. We'll come back with a clear quote.",
   },
 ];

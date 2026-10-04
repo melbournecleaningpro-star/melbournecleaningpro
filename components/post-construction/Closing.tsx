@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Check, Mail, Phone } from "lucide-react";
 import { images, postConstructionQuoteMailHref, pricingFactors, priorities, process, stages } from "@/lib/post-construction";
-import { isLiveRoute, quoteHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 /** Priorities as a project completion board (punch list). */
@@ -203,10 +203,12 @@ export function PostCTA() {
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 Get a Post-Construction Cleaning Quote
               </ButtonLink>
-              <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Call Us
-              </ButtonLink>
+              {showPhone && (
+                <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
+                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  Call Us
+                </ButtonLink>
+              )}
             </div>
           </div>
         </div>

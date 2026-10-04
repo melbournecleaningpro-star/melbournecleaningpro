@@ -11,7 +11,7 @@ import {
   windowQuoteMailHref,
   type Side,
 } from "@/lib/window-cleaning";
-import { isLiveRoute, quoteHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 /** A squeegee stroke used as a list marker. */
@@ -347,10 +347,12 @@ export function WindowCTA() {
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 Get a Window Cleaning Quote
               </ButtonLink>
-              <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Call Us
-              </ButtonLink>
+              {showPhone && (
+                <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
+                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  Call Us
+                </ButtonLink>
+              )}
             </div>
           </div>
         </div>

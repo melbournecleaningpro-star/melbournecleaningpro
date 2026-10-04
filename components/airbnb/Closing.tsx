@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, Mail, Phone } from "lucide-react";
 import { airbnbQuoteMailHref, booking, images, pricingFactors } from "@/lib/airbnb";
-import { isLiveRoute, quoteHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 export function AirbnbPricing() {
@@ -146,10 +146,12 @@ export function AirbnbCTA() {
             <Mail className="h-4 w-4" aria-hidden="true" />
             Get an Airbnb Cleaning Quote
           </ButtonLink>
-          <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
-            <Phone className="h-4 w-4" aria-hidden="true" />
-            Call Us
-          </ButtonLink>
+          {showPhone && (
+            <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Call Us
+            </ButtonLink>
+          )}
         </div>
       </Container>
     </section>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, Mail, Phone, ShieldCheck } from "lucide-react";
 import { boundaries, ctaBrief, images, officeQuoteMailHref, processSteps, quoteFactors } from "@/lib/office";
-import { isLiveRoute, quoteHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 export function QuoteFactors() {
@@ -207,10 +207,12 @@ export function OfficeCTA() {
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 Request an Office Cleaning Quote
               </ButtonLink>
-              <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Call Us
-              </ButtonLink>
+              {showPhone && (
+                <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
+                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  Call Us
+                </ButtonLink>
+              )}
             </div>
           </div>
         </div>

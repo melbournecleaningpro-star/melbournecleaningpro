@@ -174,7 +174,7 @@ export const faqs: Faq[] = [
   {
     question: "How can I request a cleaning quote?",
     answer:
-      "Call us or send an email with the type of clean, your suburb, the size of the property and your preferred date. We'll reply with a free, no-obligation quote.",
+      "Send us an email with the type of clean, your suburb, the size of the property and your preferred date. We'll reply with a free, no-obligation quote.",
   },
   {
     question: "Can I book a one-off cleaning service?",

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Phone } from "lucide-react";
 import { images, scenarios } from "@/lib/deep-cleaning";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, showPhone } from "@/lib/site";
 import { Breadcrumbs, type Crumb } from "../Breadcrumbs";
 import { ButtonLink, Container } from "../ui";
 
@@ -38,10 +38,12 @@ export function DeepHero({ breadcrumbs }: { breadcrumbs: Crumb[] }) {
               <ButtonLink href="#quote" size="lg">
                 Get a Deep Cleaning Quote
               </ButtonLink>
-              <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Call Us
-              </ButtonLink>
+              {showPhone && (
+                <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
+                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  Call Us
+                </ButtonLink>
+              )}
             </div>
           </div>
         </div>

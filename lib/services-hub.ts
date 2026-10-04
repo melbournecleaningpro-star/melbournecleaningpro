@@ -273,7 +273,7 @@ export const hubFaqs: HubFaq[] = [
   {
     question: "How do I request a cleaning quote?",
     answer:
-      "Use the Get a Cleaning Quote button, email or call us. Tell us the property type, your suburb, the service you're interested in and your preferred date.",
+      "Use the Get a Cleaning Quote button or email us. Tell us the property type, your suburb, the service you're interested in and your preferred date.",
   },
 ];
 

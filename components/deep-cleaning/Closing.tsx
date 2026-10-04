@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUpRight, Mail, Phone } from "lucide-react";
 import { deepQuoteMailHref, journey, preparation, pricingFactors, propertyTypes } from "@/lib/deep-cleaning";
-import { isLiveRoute, siteConfig } from "@/lib/site";
+import { isLiveRoute, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 export function PropertyTypes() {
@@ -183,13 +183,15 @@ export function DeepCTA() {
             <Mail className="h-4 w-4" aria-hidden="true" />
             Get a Deep Cleaning Quote
           </a>
-          <a
-            href={siteConfig.contact.phone.href}
-            className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-base font-semibold text-ink ring-2 ring-inset ring-ink/80 transition-colors hover:bg-ink/5"
-          >
-            <Phone className="h-4 w-4" aria-hidden="true" />
-            Call Us
-          </a>
+          {showPhone && (
+            <a
+              href={siteConfig.contact.phone.href}
+              className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-base font-semibold text-ink ring-2 ring-inset ring-ink/80 transition-colors hover:bg-ink/5"
+            >
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Call Us
+            </a>
+          )}
         </div>
       </Container>
     </section>

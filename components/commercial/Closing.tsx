@@ -1,6 +1,6 @@
 import { ArrowRight, Check, Mail, MapPin, Phone } from "lucide-react";
 import { commercialQuoteMailHref, costFactors, oneOffUses, quoteBrief, recurringUses } from "@/lib/commercial";
-import { isLiveRoute, quoteHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 export function CostFactors() {
@@ -207,10 +207,12 @@ export function CommercialCTA() {
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 Request a Commercial Quote
               </ButtonLink>
-              <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Call Us
-              </ButtonLink>
+              {showPhone && (
+                <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
+                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  Call Us
+                </ButtonLink>
+              )}
             </div>
           </div>
 

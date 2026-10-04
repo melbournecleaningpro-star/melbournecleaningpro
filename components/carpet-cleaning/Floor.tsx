@@ -12,7 +12,7 @@ import {
   visitSurrounds,
   whenToBook,
 } from "@/lib/carpet-cleaning";
-import { isLiveRoute, quoteHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 /** Large carpet close-up split on a diagonal: worn and marked on one side, refreshed on the other. */
@@ -322,10 +322,12 @@ export function CarpetCTA() {
             <Mail className="h-4 w-4" aria-hidden="true" />
             Get a Carpet Cleaning Quote
           </ButtonLink>
-          <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
-            <Phone className="h-4 w-4" aria-hidden="true" />
-            Call Us
-          </ButtonLink>
+          {showPhone && (
+            <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Call Us
+            </ButtonLink>
+          )}
         </div>
       </Container>
     </section>

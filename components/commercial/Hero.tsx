@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CalendarRange, Moon, Phone, Sunrise } from "lucide-react";
 import { images, valuePoints } from "@/lib/commercial";
-import { quoteHref, siteConfig } from "@/lib/site";
+import { quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { Breadcrumbs, type Crumb } from "../Breadcrumbs";
 import { ButtonLink, Container } from "../ui";
 
@@ -44,10 +44,12 @@ export function CommercialHero({ breadcrumbs }: { breadcrumbs: Crumb[] }) {
               <ButtonLink href={quoteHref} variant="accent" size="lg">
                 Request a Commercial Quote
               </ButtonLink>
-              <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Call Us
-              </ButtonLink>
+              {showPhone && (
+                <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
+                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  Call Us
+                </ButtonLink>
+              )}
             </div>
 
             <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/10 pt-6 text-sm text-white/70">

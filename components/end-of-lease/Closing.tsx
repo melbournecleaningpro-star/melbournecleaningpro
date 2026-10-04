@@ -1,6 +1,6 @@
 import { ArrowRight, Info, Mail, MapPin, Phone, Wrench } from "lucide-react";
 import { endOfLeaseQuoteMailHref, notRepairs, preparationSteps, pricingFactors } from "@/lib/end-of-lease";
-import { isLiveRoute, quoteHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 export function Pricing() {
@@ -213,10 +213,12 @@ export function EndOfLeaseCTA() {
                   <Mail className="h-4 w-4" aria-hidden="true" />
                   Get a Free Quote
                 </ButtonLink>
-                <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
-                  <Phone className="h-4 w-4" aria-hidden="true" />
-                  Call Now
-                </ButtonLink>
+                {showPhone && (
+                  <ButtonLink href={siteConfig.contact.phone.href} variant="ghost-light" size="lg">
+                    <Phone className="h-4 w-4" aria-hidden="true" />
+                    Call Now
+                  </ButtonLink>
+                )}
               </div>
             </div>
             <div className="rounded-3xl bg-white/[0.06] p-6 ring-1 ring-white/15 sm:p-7">

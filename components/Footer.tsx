@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { services } from "@/lib/content";
-import { isLiveRoute, navItems, siteConfig } from "@/lib/site";
+import { isLiveRoute, navItems, siteConfig, showPhone } from "@/lib/site";
 import { Logo } from "./Logo";
 import { Container } from "./ui";
 
@@ -101,12 +101,14 @@ export function Footer() {
         <div>
           <h2 className="text-sm font-semibold text-white">Contact</h2>
           <ul className="mt-4 space-y-3.5 text-sm">
-            <li>
-              <a href={phone.href} className="flex items-center gap-3 transition-colors hover:text-white">
-                <Phone className="h-4 w-4 shrink-0 text-wattle" aria-hidden="true" />
-                {phone.display}
-              </a>
-            </li>
+            {showPhone && (
+              <li>
+                <a href={phone.href} className="flex items-center gap-3 transition-colors hover:text-white">
+                  <Phone className="h-4 w-4 shrink-0 text-wattle" aria-hidden="true" />
+                  {phone.display}
+                </a>
+              </li>
+            )}
             <li>
               <a href={email.href} className="flex items-center gap-3 transition-colors hover:text-white">
                 <Mail className="h-4 w-4 shrink-0 text-wattle" aria-hidden="true" />

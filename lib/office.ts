@@ -231,6 +231,6 @@ export const officeFaqs: Faq[] = [
   {
     question: "How do I request an office cleaning quote?",
     answer:
-      "Email or call us with your office location, approximate size, preferred cleaning frequency, preferred time and the areas you'd like cleaned. We'll review your requirements and come back with a clear quote.",
+      "Email us with your office location, approximate size, preferred cleaning frequency, preferred time and the areas you'd like cleaned. We'll review your requirements and come back with a clear quote.",
   },
 ];

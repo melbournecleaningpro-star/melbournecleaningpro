@@ -1,5 +1,5 @@
 import { Phone } from "lucide-react";
-import { headerQuoteHref, navItems, siteConfig } from "@/lib/site";
+import { headerQuoteHref, navItems, siteConfig, showPhone } from "@/lib/site";
 import { Logo } from "./Logo";
 import { MobileNav } from "./MobileNav";
 import { ButtonLink, Container } from "./ui";
@@ -34,13 +34,15 @@ export function Header({ current }: { current?: "quote" } = {}) {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
-          <a
-            href={siteConfig.contact.phone.href}
-            className="hidden items-center gap-2 whitespace-nowrap text-sm font-semibold text-ink transition-colors hover:text-brand xl:flex"
-          >
-            <Phone className="h-4 w-4 text-brand" aria-hidden="true" />
-            {siteConfig.contact.phone.display}
-          </a>
+          {showPhone && (
+            <a
+              href={siteConfig.contact.phone.href}
+              className="hidden items-center gap-2 whitespace-nowrap text-sm font-semibold text-ink transition-colors hover:text-brand xl:flex"
+            >
+              <Phone className="h-4 w-4 text-brand" aria-hidden="true" />
+              {siteConfig.contact.phone.display}
+            </a>
+          )}
           <ButtonLink
             href={headerQuoteHref}
             aria-current={current === "quote" ? "page" : undefined}

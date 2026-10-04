@@ -1,6 +1,6 @@
 import { ArrowRight, Mail, Phone, Scissors } from "lucide-react";
 import { audiences, checklist, flow, pricingFactors, priorities, springQuoteMailHref } from "@/lib/spring-cleaning";
-import { isLiveRoute, quoteHref, siteConfig } from "@/lib/site";
+import { isLiveRoute, quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { ButtonLink, Container } from "../ui";
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -304,10 +304,12 @@ export function SpringCTA() {
             <Mail className="h-4 w-4" aria-hidden="true" />
             Get a Spring Cleaning Quote
           </ButtonLink>
-          <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
-            <Phone className="h-4 w-4" aria-hidden="true" />
-            Call Us
-          </ButtonLink>
+          {showPhone && (
+            <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Call Us
+            </ButtonLink>
+          )}
         </div>
       </Container>
     </section>

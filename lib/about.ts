@@ -94,7 +94,7 @@ export const audiences = [
 export const suburbs = ["Melbourne CBD", "Richmond", "South Yarra", "Brunswick", "Footscray", "Preston", "Werribee", "Point Cook", "Doncaster", "Glen Waverley"];
 
 export const journey = [
-  { title: "Tell Us What You Need", text: "Send a message or call with the basics: the property, your suburb and what you'd like cleaned." },
+  { title: "Tell Us What You Need", text: "Send us a message with the basics: the property, your suburb and what you'd like cleaned." },
   { title: "Discuss the Property", text: "We talk through the size, condition and any areas that need particular attention." },
   { title: "Confirm the Cleaning Scope", text: "You know what's included before anything is booked." },
   { title: "Arrange the Service", text: "We agree a time that suits you." },
@@ -141,6 +141,6 @@ export const aboutFaqs: Faq[] = [
   {
     question: "How can I request a quote?",
     answer:
-      "Use the Get a Cleaning Quote button, or email or call us with your property type, suburb, the cleaning you need and your preferred date.",
+      "Use the Get a Cleaning Quote button, or email us with your property type, suburb, the cleaning you need and your preferred date.",
   },
 ];

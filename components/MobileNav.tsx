@@ -2,7 +2,7 @@
 
 import { Menu, Phone, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { headerQuoteHref, navItems, siteConfig } from "@/lib/site";
+import { headerQuoteHref, navItems, siteConfig, showPhone } from "@/lib/site";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -61,13 +61,15 @@ export function MobileNav() {
             >
               Get a Free Quote
             </a>
-            <a
-              href={siteConfig.contact.phone.href}
-              className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3.5 text-sm font-semibold text-ink ring-1 ring-inset ring-line transition-colors hover:ring-brand"
-            >
-              <Phone className="h-4 w-4 text-brand" aria-hidden="true" />
-              Call Now
-            </a>
+            {showPhone && (
+              <a
+                href={siteConfig.contact.phone.href}
+                className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3.5 text-sm font-semibold text-ink ring-1 ring-inset ring-line transition-colors hover:ring-brand"
+              >
+                <Phone className="h-4 w-4 text-brand" aria-hidden="true" />
+                Call Now
+              </a>
+            )}
           </div>
         </nav>
       </div>

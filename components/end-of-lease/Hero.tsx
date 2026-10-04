@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Phone } from "lucide-react";
 import { checklist, showcase, trustPoints } from "@/lib/end-of-lease";
-import { quoteHref, siteConfig } from "@/lib/site";
+import { quoteHref, siteConfig, showPhone } from "@/lib/site";
 import { Breadcrumbs, type Crumb } from "../Breadcrumbs";
 import { ButtonLink, Container } from "../ui";
 import { CheckBox } from "./CheckBox";
@@ -38,10 +38,12 @@ export function EndOfLeaseHero({ breadcrumbs }: { breadcrumbs: Crumb[] }) {
               <ButtonLink href={quoteHref} size="lg">
                 Get a Free Quote
               </ButtonLink>
-              <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Call Now
-              </ButtonLink>
+              {showPhone && (
+                <ButtonLink href={siteConfig.contact.phone.href} variant="secondary" size="lg">
+                  <Phone className="h-4 w-4" aria-hidden="true" />
+                  Call Now
+                </ButtonLink>
+              )}
             </div>
           </div>
 

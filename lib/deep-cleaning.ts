@@ -247,6 +247,6 @@ export const deepFaqs: Faq[] = [
   {
     question: "How do I get a deep cleaning quote?",
     answer:
-      "Send us your property type, suburb, number of bedrooms and bathrooms, and your priority areas. You can use the priority selector on this page to add them to your email automatically, or call us to talk it through.",
+      "Send us your property type, suburb, number of bedrooms and bathrooms, and your priority areas. You can use the priority selector on this page to add them to your email automatically.",
   },
 ];

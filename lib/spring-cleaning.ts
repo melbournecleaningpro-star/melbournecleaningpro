@@ -188,6 +188,6 @@ export const springFaqs: Faq[] = [
   {
     question: "How do I request a spring cleaning quote?",
     answer:
-      "Email or call us with your property type, suburb, number of bedrooms and bathrooms, your priority areas and your preferred date. We'll come back with a clear quote.",
+      "Email us with your property type, suburb, number of bedrooms and bathrooms, your priority areas and your preferred date. We'll come back with a clear quote.",
   },
 ];

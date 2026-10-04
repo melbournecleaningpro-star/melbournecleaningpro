@@ -93,27 +93,40 @@ function buildMessage(env: Env, lead: Lead): string {
 }
 
 async function sendMail(env: Env, lead: Lead): Promise<void> {
+  // 465 is TLS from the first byte; anything else (587) upgrades with STARTTLS.
+  const port = Number(env.SMTP_PORT) || 587;
+  const implicitTls = port === 465;
   const socket = connect(
-    { hostname: env.SMTP_HOST, port: Number(env.SMTP_PORT) || 587 },
-    { secureTransport: "starttls", allowHalfOpen: false },
+    { hostname: env.SMTP_HOST, port },
+    { secureTransport: implicitTls ? "on" : "starttls", allowHalfOpen: false },
   );
   let smtp = new SmtpConnection(socket);
+  let step = "connect";
   try {
+    await socket.opened;
+    step = "greeting";
     await smtp.expect(220);
     await smtp.command("EHLO melbournecleaningpro.com", 250);
-    await smtp.command("STARTTLS", 220);
-    smtp.release();
-    smtp = new SmtpConnection(socket.startTls());
-    await smtp.command("EHLO melbournecleaningpro.com", 250);
+    if (!implicitTls) {
+      await smtp.command("STARTTLS", 220);
+      step = "tls";
+      smtp.release();
+      smtp = new SmtpConnection(socket.startTls());
+      await smtp.command("EHLO melbournecleaningpro.com", 250);
+    }
+    step = "auth";
     await smtp.command("AUTH LOGIN", 334);
     await smtp.command(base64(env.SMTP_USERNAME), 334);
     await smtp.command(base64(env.SMTP_PASSWORD), 235, "AUTH (password)");
+    step = "send";
     await smtp.command(`MAIL FROM:<${env.SMTP_USERNAME}>`, 250);
     await smtp.command(`RCPT TO:<${env.LEAD_TO_EMAIL}>`, 250);
     await smtp.command("DATA", 354);
     // Base64 body lines never start with ".", so no dot-stuffing is needed.
     await smtp.command(`${buildMessage(env, lead)}\r\n.`, 250, "message data");
     await smtp.command("QUIT", 221).catch(() => {});
+  } catch (err) {
+    throw new Error(`[${step}] ${err instanceof Error ? err.message : String(err)}`);
   } finally {
     await smtp.close();
   }

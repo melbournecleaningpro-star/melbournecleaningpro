@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title,
     description: siteConfig.description,
   },
-  // Pre-launch: noindex site-wide until NEXT_PUBLIC_ALLOW_INDEXING=true (see lib/site.ts).
+  // Indexable unless NEXT_PUBLIC_ALLOW_INDEXING=false (see lib/site.ts).
   robots: pageRobots,
   formatDetection: { telephone: false, email: false, address: false },
 };

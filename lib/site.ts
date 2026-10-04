@@ -45,11 +45,11 @@ export const siteConfig = {
 export const showPhone = !siteConfig.contact.phone.isPlaceholder;
 
 /**
- * Search-engine indexing switch. The site is pre-launch, so every page is
- * noindex/nofollow until NEXT_PUBLIC_ALLOW_INDEXING=true is set at build time
- * (and the X-Robots-Tag line is removed from public/_headers).
+ * Search-engine indexing switch. The site is live, so pages are indexable.
+ * Set NEXT_PUBLIC_ALLOW_INDEXING=false at build time to noindex every page
+ * (e.g. for a staging copy).
  */
-export const ALLOW_INDEXING = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
+export const ALLOW_INDEXING = process.env.NEXT_PUBLIC_ALLOW_INDEXING !== "false";
 
 export const pageRobots = ALLOW_INDEXING
   ? {
